@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>30A0BD98-6363-4B2A-B080-8B512B41B63F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS-SDK-Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0F28B726-8288-4321-8810-04D13F7CCF9E</key>
+		<string>https://github.com/AppLovin/iOS-Demo-App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS-SDK-Demo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0F28B726-8288-4321-8810-04D13F7CCF9E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AppLovin/iOS-Demo-App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0F28B726-8288-4321-8810-04D13F7CCF9E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0F28B726-8288-4321-8810-04D13F7CCF9E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Demo-App</string>
+		</dict>
+	</array>
+</dict>
+</plist>
