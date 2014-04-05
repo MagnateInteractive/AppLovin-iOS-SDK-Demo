@@ -193,6 +193,7 @@
 		277F7B1D18EDDE2D001F2E1F /* iOS Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				27C0E1BB18EF6FEA00CB3405 /* Launch Icons */,
 				2713D01C18EDDD0C006218B2 /* ALDemoAppDelegate.h */,
 				2713D01D18EDDD0C006218B2 /* ALDemoAppDelegate.m */,
 				2713D01F18EDDD0C006218B2 /* Main.storyboard */,
@@ -243,6 +244,13 @@
 				27C0E1B118EF393500CB3405 /* ALDemoRewardedVideoViewController.m */,
 			);
 			name = "Advanced Features";
+			sourceTree = "<group>";
+		};
+		27C0E1BB18EF6FEA00CB3405 /* Launch Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Launch Icons";
 			sourceTree = "<group>";
 		};
 		27F8E00218EE0E550046A235 /* AppLovin SDK */ = {
@@ -490,7 +498,6 @@
 		2713D03D18EDDD0C006218B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Prefix.pch";
@@ -511,7 +518,6 @@
 		2713D03E18EDDD0C006218B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Prefix.pch";
