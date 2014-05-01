@@ -39,7 +39,6 @@
     }
     
     self.navigationItem.backBarButtonItem = [self menuButton];
-    
 }
 
 -(NSArray*) navigationModel

@@ -20,6 +20,9 @@
 		2713D02F18EDDD0C006218B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D01118EDDD0C006218B2 /* UIKit.framework */; };
 		2713D03718EDDD0C006218B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2713D03518EDDD0C006218B2 /* InfoPlist.strings */; };
 		2713D03918EDDD0C006218B2 /* iOS_SDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2713D03818EDDD0C006218B2 /* iOS_SDK_DemoTests.m */; };
+		277D40C51911AF2D001FE87E /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 277D40C21911AF2D001FE87E /* 58.png */; };
+		277D40C61911AF2D001FE87E /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = 277D40C31911AF2D001FE87E /* 80.png */; };
+		277D40C71911AF2D001FE87E /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 277D40C41911AF2D001FE87E /* 120.png */; };
 		277F7B2118EDDE54001F2E1F /* ALDemoRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277F7B2018EDDE54001F2E1F /* ALDemoRootController.m */; };
 		27C0E1A618EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0E1A518EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.m */; };
 		27C0E1AF18EF294600CB3405 /* ALDemoManualPrecachingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0E1AE18EF294600CB3405 /* ALDemoManualPrecachingViewController.m */; };
@@ -60,6 +63,9 @@
 		2713D03418EDDD0C006218B2 /* iOS-SDK-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-SDK-DemoTests-Info.plist"; sourceTree = "<group>"; };
 		2713D03618EDDD0C006218B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2713D03818EDDD0C006218B2 /* iOS_SDK_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_SDK_DemoTests.m; sourceTree = "<group>"; };
+		277D40C21911AF2D001FE87E /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		277D40C31911AF2D001FE87E /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		277D40C41911AF2D001FE87E /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		277F7B1F18EDDE54001F2E1F /* ALDemoRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoRootController.h; sourceTree = "<group>"; };
 		277F7B2018EDDE54001F2E1F /* ALDemoRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoRootController.m; sourceTree = "<group>"; };
 		27C0E1A418EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoProgrammaticInterstitialViewController.h; sourceTree = "<group>"; };
@@ -143,6 +149,9 @@
 		2713D01318EDDD0C006218B2 /* iOS-SDK-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				277D40C21911AF2D001FE87E /* 58.png */,
+				277D40C31911AF2D001FE87E /* 80.png */,
+				277D40C41911AF2D001FE87E /* 120.png */,
 				27F8E00218EE0E550046A235 /* AppLovin SDK */,
 				277F7B1E18EDDE37001F2E1F /* Demo App Components */,
 				277F7B1D18EDDE2D001F2E1F /* iOS Stuff */,
@@ -256,17 +265,8 @@
 		27F8E00218EE0E550046A235 /* AppLovin SDK */ = {
 			isa = PBXGroup;
 			children = (
-				27F8E00318EE0E780046A235 /* headers */,
 			);
 			name = "AppLovin SDK";
-			sourceTree = "<group>";
-		};
-		27F8E00318EE0E780046A235 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = headers;
-			path = AppLovinSdkHere/headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,8 +346,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277D40C61911AF2D001FE87E /* 80.png in Resources */,
 				2713D02618EDDD0C006218B2 /* Images.xcassets in Resources */,
 				2713D01818EDDD0C006218B2 /* InfoPlist.strings in Resources */,
+				277D40C71911AF2D001FE87E /* 120.png in Resources */,
+				277D40C51911AF2D001FE87E /* 58.png in Resources */,
 				2713D02118EDDD0C006218B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +508,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-SDK-Demo/AppLovinSdkHere",
+					"/Users/mszaro/Downloads/applovin-ios-sdk-2.3.5",
+					"/Users/mszaro/AppLovin/iPhoneSDK/AppLovin-iPhone-SDK/build",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -525,6 +530,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-SDK-Demo/AppLovinSdkHere",
+					"/Users/mszaro/Downloads/applovin-ios-sdk-2.3.5",
+					"/Users/mszaro/AppLovin/iPhoneSDK/AppLovin-iPhone-SDK/build",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
