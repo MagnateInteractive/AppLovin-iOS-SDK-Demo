@@ -10,29 +10,29 @@
 	<string>iOS-SDK-Demo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0F28B726-8288-4321-8810-04D13F7CCF9E</key>
-		<string>https://github.com/AppLovin/iOS-Demo-App.git</string>
+		<key>F52C9977C1ED38CCE15D98A0FB509E891E09204F</key>
+		<string>https://github.com/thomasmso/iOS-Demo-App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS-SDK-Demo.xcodeproj/project.xcworkspace</string>
+	<string>iOS-SDK-Demo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0F28B726-8288-4321-8810-04D13F7CCF9E</key>
+		<key>F52C9977C1ED38CCE15D98A0FB509E891E09204F</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AppLovin/iOS-Demo-App.git</string>
+	<string>https://github.com/thomasmso/iOS-Demo-App.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0F28B726-8288-4321-8810-04D13F7CCF9E</string>
+	<string>F52C9977C1ED38CCE15D98A0FB509E891E09204F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0F28B726-8288-4321-8810-04D13F7CCF9E</string>
+			<string>F52C9977C1ED38CCE15D98A0FB509E891E09204F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS-Demo-App</string>
 		</dict>

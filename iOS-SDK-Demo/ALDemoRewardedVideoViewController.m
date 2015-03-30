@@ -70,7 +70,7 @@
 
 -(void) rewardValidationRequestForAd:(ALAd *)ad didFailWithError:(NSInteger)responseCode
 {
-    if(responseCode == kALErrorCodeUserClosedVideo)
+    if(responseCode == kALErrorCodeIncentivizedUserClosedVideo)
     {
         // Your user exited the video prematurely. It's up to you if you'd still like to grant
         // a reward in this case. Most developers choose not to. Note that this case can occur
@@ -78,7 +78,7 @@
         // video is launched).
     }
     
-    if(responseCode == kALErrorCodeServerTimeout || responseCode == kALErrorCodeUnknownServerError)
+    if(responseCode == kALErrorCodeIncentivizedValidationNetworkTimeout || responseCode == kALErrorCodeIncentivizedUnknownServerError)
     {
         // Some server issue happened here. Don't grant a reward. By default we'll show the user
         // a UIAlertView telling them to try again later, but you can change this in the

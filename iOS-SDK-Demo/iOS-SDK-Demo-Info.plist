@@ -10,6 +10,10 @@
 	<string>AppLovin</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>com.applovin.sdkdemo</string>
 	<key>CFBundleInfoDictionaryVersion</key>
