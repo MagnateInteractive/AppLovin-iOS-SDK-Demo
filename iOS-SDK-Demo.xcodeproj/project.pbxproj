@@ -10,7 +10,8 @@
 		1D19D2A21AB24BD000815981 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D29F1AB24BD000815981 /* AVFoundation.framework */; };
 		1D19D2A31AB24BD000815981 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D2A01AB24BD000815981 /* CoreMedia.framework */; };
 		1D19D2A41AB24BD000815981 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D2A11AB24BD000815981 /* CoreTelephony.framework */; };
-		1DC3E9301BB31EA50093EF2A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */; };
+		1D47D8DB1BB327F800F33ADA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */; };
+		1DC3E9871BB320190093EF2A /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC3E9861BB320190093EF2A /* libAppLovinSdk.a */; settings = {ASSET_TAGS = (); }; };
 		1DC3E98D1BB321660093EF2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		1DC3E9971BB3249D0093EF2A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E9961BB3249D0093EF2A /* logo.png */; settings = {ASSET_TAGS = (); }; };
 		2713D00E18EDDD0C006218B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00D18EDDD0C006218B2 /* Foundation.framework */; };
@@ -52,7 +53,35 @@
 		1D19D29F1AB24BD000815981 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1D19D2A01AB24BD000815981 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1D19D2A11AB24BD000815981 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1D47D8E01BB32A4500F33ADA /* ALDebugLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALDebugLog.h; sourceTree = "<group>"; };
 		1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1DC3E96C1BB320190093EF2A /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
+		1DC3E96D1BB320190093EF2A /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
+		1DC3E96E1BB320190093EF2A /* ALAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdLoadDelegate.h; sourceTree = "<group>"; };
+		1DC3E96F1BB320190093EF2A /* ALAdRewardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdRewardDelegate.h; sourceTree = "<group>"; };
+		1DC3E9701BB320190093EF2A /* ALAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdService.h; sourceTree = "<group>"; };
+		1DC3E9711BB320190093EF2A /* ALAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdSize.h; sourceTree = "<group>"; };
+		1DC3E9721BB320190093EF2A /* ALAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdType.h; sourceTree = "<group>"; };
+		1DC3E9731BB320190093EF2A /* ALAdUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdUpdateDelegate.h; sourceTree = "<group>"; };
+		1DC3E9741BB320190093EF2A /* ALAdVideoPlaybackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdVideoPlaybackDelegate.h; sourceTree = "<group>"; };
+		1DC3E9751BB320190093EF2A /* ALAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdView.h; sourceTree = "<group>"; };
+		1DC3E9761BB320190093EF2A /* ALErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALErrorCodes.h; sourceTree = "<group>"; };
+		1DC3E9771BB320190093EF2A /* ALEventService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventService.h; sourceTree = "<group>"; };
+		1DC3E9781BB320190093EF2A /* ALEventTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALEventTypes.h; sourceTree = "<group>"; };
+		1DC3E9791BB320190093EF2A /* ALIncentivizedInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIncentivizedInterstitialAd.h; sourceTree = "<group>"; };
+		1DC3E97A1BB320190093EF2A /* ALInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALInterstitialAd.h; sourceTree = "<group>"; };
+		1DC3E97B1BB320190093EF2A /* ALNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAd.h; sourceTree = "<group>"; };
+		1DC3E97C1BB320190093EF2A /* ALNativeAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdLoadDelegate.h; sourceTree = "<group>"; };
+		1DC3E97D1BB320190093EF2A /* ALNativeAdPrecacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdPrecacheDelegate.h; sourceTree = "<group>"; };
+		1DC3E97E1BB320190093EF2A /* ALNativeAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeAdService.h; sourceTree = "<group>"; };
+		1DC3E97F1BB320190093EF2A /* ALNullabilityAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNullabilityAnnotations.h; sourceTree = "<group>"; };
+		1DC3E9801BB320190093EF2A /* ALPostbackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackDelegate.h; sourceTree = "<group>"; };
+		1DC3E9811BB320190093EF2A /* ALPostbackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPostbackService.h; sourceTree = "<group>"; };
+		1DC3E9821BB320190093EF2A /* ALSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdk.h; sourceTree = "<group>"; };
+		1DC3E9831BB320190093EF2A /* ALSdkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
+		1DC3E9841BB320190093EF2A /* ALSwiftHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSwiftHeaders.h; sourceTree = "<group>"; };
+		1DC3E9851BB320190093EF2A /* ALTargetingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
+		1DC3E9861BB320190093EF2A /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinSdk.a; sourceTree = "<group>"; };
 		1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		1DC3E9961BB3249D0093EF2A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,16 +126,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC3E9301BB31EA50093EF2A /* StoreKit.framework in Frameworks */,
+				1DC3E9871BB320190093EF2A /* libAppLovinSdk.a in Frameworks */,
+				27F8E02518EE13190046A235 /* AdSupport.framework in Frameworks */,
 				1D19D2A21AB24BD000815981 /* AVFoundation.framework in Frameworks */,
+				2713D01018EDDD0C006218B2 /* CoreGraphics.framework in Frameworks */,
 				1D19D2A31AB24BD000815981 /* CoreMedia.framework in Frameworks */,
 				1D19D2A41AB24BD000815981 /* CoreTelephony.framework in Frameworks */,
-				2713D01018EDDD0C006218B2 /* CoreGraphics.framework in Frameworks */,
-				27F8E02718EE131E0046A235 /* MediaPlayer.framework in Frameworks */,
-				27F8E02918EE13250046A235 /* SystemConfiguration.framework in Frameworks */,
-				27F8E02518EE13190046A235 /* AdSupport.framework in Frameworks */,
-				2713D01218EDDD0C006218B2 /* UIKit.framework in Frameworks */,
 				2713D00E18EDDD0C006218B2 /* Foundation.framework in Frameworks */,
+				27F8E02718EE131E0046A235 /* MediaPlayer.framework in Frameworks */,
+				1D47D8DB1BB327F800F33ADA /* StoreKit.framework in Frameworks */,
+				27F8E02918EE13250046A235 /* SystemConfiguration.framework in Frameworks */,
+				2713D01218EDDD0C006218B2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +153,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DC3E96B1BB320190093EF2A /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				1DC3E96C1BB320190093EF2A /* ALAd.h */,
+				1DC3E96D1BB320190093EF2A /* ALAdDisplayDelegate.h */,
+				1DC3E96E1BB320190093EF2A /* ALAdLoadDelegate.h */,
+				1DC3E96F1BB320190093EF2A /* ALAdRewardDelegate.h */,
+				1DC3E9701BB320190093EF2A /* ALAdService.h */,
+				1DC3E9711BB320190093EF2A /* ALAdSize.h */,
+				1DC3E9721BB320190093EF2A /* ALAdType.h */,
+				1DC3E9731BB320190093EF2A /* ALAdUpdateDelegate.h */,
+				1DC3E9741BB320190093EF2A /* ALAdVideoPlaybackDelegate.h */,
+				1DC3E9751BB320190093EF2A /* ALAdView.h */,
+				1DC3E9761BB320190093EF2A /* ALErrorCodes.h */,
+				1DC3E9771BB320190093EF2A /* ALEventService.h */,
+				1DC3E9781BB320190093EF2A /* ALEventTypes.h */,
+				1DC3E9791BB320190093EF2A /* ALIncentivizedInterstitialAd.h */,
+				1DC3E97A1BB320190093EF2A /* ALInterstitialAd.h */,
+				1DC3E97B1BB320190093EF2A /* ALNativeAd.h */,
+				1DC3E97C1BB320190093EF2A /* ALNativeAdLoadDelegate.h */,
+				1DC3E97D1BB320190093EF2A /* ALNativeAdPrecacheDelegate.h */,
+				1DC3E97E1BB320190093EF2A /* ALNativeAdService.h */,
+				1DC3E97F1BB320190093EF2A /* ALNullabilityAnnotations.h */,
+				1DC3E9801BB320190093EF2A /* ALPostbackDelegate.h */,
+				1DC3E9811BB320190093EF2A /* ALPostbackService.h */,
+				1DC3E9821BB320190093EF2A /* ALSdk.h */,
+				1DC3E9831BB320190093EF2A /* ALSdkSettings.h */,
+				1DC3E9841BB320190093EF2A /* ALSwiftHeaders.h */,
+				1DC3E9851BB320190093EF2A /* ALTargetingData.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
 		2713D00118EDDD0C006218B2 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +280,7 @@
 		277F7B1E18EDDE37001F2E1F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1D47D8E01BB32A4500F33ADA /* ALDebugLog.h */,
 				2713D01C18EDDD0C006218B2 /* ALDemoAppDelegate.h */,
 				2713D01D18EDDD0C006218B2 /* ALDemoAppDelegate.m */,
 				277F7B1F18EDDE54001F2E1F /* ALDemoRootController.h */,
@@ -262,6 +326,8 @@
 		27F8E00218EE0E550046A235 /* AppLovin SDK */ = {
 			isa = PBXGroup;
 			children = (
+				1DC3E96B1BB320190093EF2A /* headers */,
+				1DC3E9861BB320190093EF2A /* libAppLovinSdk.a */,
 			);
 			name = "AppLovin SDK";
 			sourceTree = "<group>";
@@ -457,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -489,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -505,9 +571,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/iOS-SDK-Demo/AppLovinSdkHere",
-					"/Users/mszaro/Downloads/applovin-ios-sdk-2.3.5",
-					"/Users/mszaro/AppLovin/iPhoneSDK/AppLovin-iPhone-SDK/build",
 					"$(PROJECT_DIR)/iOS-SDK-Demo",
 				);
 				OTHER_LDFLAGS = (
@@ -530,9 +593,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/iOS-SDK-Demo/AppLovinSdkHere",
-					"/Users/mszaro/Downloads/applovin-ios-sdk-2.3.5",
-					"/Users/mszaro/AppLovin/iPhoneSDK/AppLovin-iPhone-SDK/build",
 					"$(PROJECT_DIR)/iOS-SDK-Demo",
 				);
 				OTHER_LDFLAGS = (

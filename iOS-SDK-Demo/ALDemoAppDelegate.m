@@ -15,6 +15,9 @@
 {
     // Initializing our SDK at launch is very important as it'll start pre-loading ads in the background.
     [ALSdk initializeSdk];
+    
+    ALLog(@"Initialized SDK of version %@", [ALSdk version]);
+    
     return YES;
 }
 							
