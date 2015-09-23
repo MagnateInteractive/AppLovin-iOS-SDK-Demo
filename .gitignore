@@ -6,3 +6,11 @@
 #
 # Pods/
 
+
+*.xcbkptlist
+
+*.xcuserstate
+
+*.xcscheme
+
+*.xcuserstate

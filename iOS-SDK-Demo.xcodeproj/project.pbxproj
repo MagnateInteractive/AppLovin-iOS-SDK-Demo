@@ -10,7 +10,7 @@
 		1D19D2A21AB24BD000815981 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D29F1AB24BD000815981 /* AVFoundation.framework */; };
 		1D19D2A31AB24BD000815981 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D2A01AB24BD000815981 /* CoreMedia.framework */; };
 		1D19D2A41AB24BD000815981 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D2A11AB24BD000815981 /* CoreTelephony.framework */; };
-		1D8E664C1AC9F5AD00159ACE /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E664B1AC9F5AD00159ACE /* Images-2.xcassets */; };
+		1DC3E9301BB31EA50093EF2A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */; };
 		2713D00E18EDDD0C006218B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00D18EDDD0C006218B2 /* Foundation.framework */; };
 		2713D01018EDDD0C006218B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00F18EDDD0C006218B2 /* CoreGraphics.framework */; };
 		2713D01218EDDD0C006218B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D01118EDDD0C006218B2 /* UIKit.framework */; };
@@ -50,7 +50,7 @@
 		1D19D29F1AB24BD000815981 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1D19D2A01AB24BD000815981 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1D19D2A11AB24BD000815981 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		1D8E664B1AC9F5AD00159ACE /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2713D00D18EDDD0C006218B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2713D00F18EDDD0C006218B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC3E9301BB31EA50093EF2A /* StoreKit.framework in Frameworks */,
 				1D19D2A21AB24BD000815981 /* AVFoundation.framework in Frameworks */,
 				1D19D2A31AB24BD000815981 /* CoreMedia.framework in Frameworks */,
 				1D19D2A41AB24BD000815981 /* CoreTelephony.framework in Frameworks */,
@@ -140,6 +141,7 @@
 		2713D00C18EDDD0C006218B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */,
 				1D19D29F1AB24BD000815981 /* AVFoundation.framework */,
 				1D19D2A01AB24BD000815981 /* CoreMedia.framework */,
 				1D19D2A11AB24BD000815981 /* CoreTelephony.framework */,
@@ -158,10 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				27F8E00218EE0E550046A235 /* AppLovin SDK */,
-				277F7B1E18EDDE37001F2E1F /* Demo App Components */,
-				277F7B1D18EDDE2D001F2E1F /* iOS Stuff */,
+				277F7B1E18EDDE37001F2E1F /* Components */,
 				277F7B1C18EDDE27001F2E1F /* SDK Examples */,
-				1D8E664B1AC9F5AD00159ACE /* Images-2.xcassets */,
+				2713D01418EDDD0C006218B2 /* Supporting Files */,
 			);
 			path = "iOS-SDK-Demo";
 			sourceTree = "<group>";
@@ -169,10 +170,12 @@
 		2713D01418EDDD0C006218B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2713D01518EDDD0C006218B2 /* iOS-SDK-Demo-Info.plist */,
+				2713D02518EDDD0C006218B2 /* Images.xcassets */,
 				2713D01618EDDD0C006218B2 /* InfoPlist.strings */,
-				2713D01918EDDD0C006218B2 /* main.m */,
+				2713D01518EDDD0C006218B2 /* iOS-SDK-Demo-Info.plist */,
 				2713D01B18EDDD0C006218B2 /* iOS-SDK-Demo-Prefix.pch */,
+				2713D01918EDDD0C006218B2 /* main.m */,
+				2713D01F18EDDD0C006218B2 /* Main.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -205,26 +208,15 @@
 			name = "SDK Examples";
 			sourceTree = "<group>";
 		};
-		277F7B1D18EDDE2D001F2E1F /* iOS Stuff */ = {
+		277F7B1E18EDDE37001F2E1F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				27C0E1BB18EF6FEA00CB3405 /* Launch Icons */,
 				2713D01C18EDDD0C006218B2 /* ALDemoAppDelegate.h */,
 				2713D01D18EDDD0C006218B2 /* ALDemoAppDelegate.m */,
-				2713D01F18EDDD0C006218B2 /* Main.storyboard */,
-				2713D02518EDDD0C006218B2 /* Images.xcassets */,
-				2713D01418EDDD0C006218B2 /* Supporting Files */,
-			);
-			name = "iOS Stuff";
-			sourceTree = "<group>";
-		};
-		277F7B1E18EDDE37001F2E1F /* Demo App Components */ = {
-			isa = PBXGroup;
-			children = (
 				277F7B1F18EDDE54001F2E1F /* ALDemoRootController.h */,
 				277F7B2018EDDE54001F2E1F /* ALDemoRootController.m */,
 			);
-			name = "Demo App Components";
+			name = Components;
 			sourceTree = "<group>";
 		};
 		27C0E1A718EF259300CB3405 /* Basic Integration */ = {
@@ -259,13 +251,6 @@
 				27C0E1B118EF393500CB3405 /* ALDemoRewardedVideoViewController.m */,
 			);
 			name = "Advanced Features";
-			sourceTree = "<group>";
-		};
-		27C0E1BB18EF6FEA00CB3405 /* Launch Icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Launch Icons";
 			sourceTree = "<group>";
 		};
 		27F8E00218EE0E550046A235 /* AppLovin SDK */ = {
@@ -353,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2713D02618EDDD0C006218B2 /* Images.xcassets in Resources */,
-				1D8E664C1AC9F5AD00159ACE /* Images-2.xcassets in Resources */,
 				2713D01818EDDD0C006218B2 /* InfoPlist.strings in Resources */,
 				2713D02118EDDD0C006218B2 /* Main.storyboard in Resources */,
 			);
