@@ -11,6 +11,12 @@
 		1D19D2A31AB24BD000815981 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D2A01AB24BD000815981 /* CoreMedia.framework */; };
 		1D19D2A41AB24BD000815981 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D19D2A11AB24BD000815981 /* CoreTelephony.framework */; };
 		1D47D8DB1BB327F800F33ADA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */; };
+		1D568BB31BB3792800DB4849 /* ALDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D568BB21BB3792800DB4849 /* ALDemoBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1D568BB61BB37BB900DB4849 /* ALDemoRewardedVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D568BB51BB37BB900DB4849 /* ALDemoRewardedVideosViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1D568BBA1BB388A600DB4849 /* nav_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D568BB91BB388A600DB4849 /* nav_logo.png */; settings = {ASSET_TAGS = (); }; };
+		1D568BBD1BB388F500DB4849 /* ALDemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D568BBC1BB388F500DB4849 /* ALDemoRootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1D5D968B1BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D968A1BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1D5D968E1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D968D1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1DC3E9871BB320190093EF2A /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC3E9861BB320190093EF2A /* libAppLovinSdk.a */; settings = {ASSET_TAGS = (); }; };
 		1DC3E98D1BB321660093EF2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		1DC3E9971BB3249D0093EF2A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E9961BB3249D0093EF2A /* logo.png */; settings = {ASSET_TAGS = (); }; };
@@ -27,16 +33,9 @@
 		2713D02F18EDDD0C006218B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D01118EDDD0C006218B2 /* UIKit.framework */; };
 		2713D03718EDDD0C006218B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2713D03518EDDD0C006218B2 /* InfoPlist.strings */; };
 		2713D03918EDDD0C006218B2 /* iOS_SDK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2713D03818EDDD0C006218B2 /* iOS_SDK_DemoTests.m */; };
-		277F7B2118EDDE54001F2E1F /* ALDemoRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277F7B2018EDDE54001F2E1F /* ALDemoRootController.m */; };
-		27C0E1A618EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0E1A518EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.m */; };
-		27C0E1AF18EF294600CB3405 /* ALDemoManualPrecachingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0E1AE18EF294600CB3405 /* ALDemoManualPrecachingViewController.m */; };
-		27C0E1B218EF393500CB3405 /* ALDemoRewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0E1B118EF393500CB3405 /* ALDemoRewardedVideoViewController.m */; };
-		27F8E01818EE0F4D0046A235 /* ALDemoBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F8E01718EE0F4D0046A235 /* ALDemoBannerViewController.m */; };
-		27F8E01B18EE10750046A235 /* ALDemoInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F8E01A18EE10750046A235 /* ALDemoInterstitialViewController.m */; };
 		27F8E02518EE13190046A235 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F8E02418EE13190046A235 /* AdSupport.framework */; };
 		27F8E02718EE131E0046A235 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F8E02618EE131E0046A235 /* MediaPlayer.framework */; };
 		27F8E02918EE13250046A235 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F8E02818EE13250046A235 /* SystemConfiguration.framework */; };
-		27F8E03418EE1DD00046A235 /* ALDemoProgrammaticBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F8E03318EE1DD00046A235 /* ALDemoProgrammaticBannerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +53,17 @@
 		1D19D2A01AB24BD000815981 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1D19D2A11AB24BD000815981 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1D47D8E01BB32A4500F33ADA /* ALDebugLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALDebugLog.h; sourceTree = "<group>"; };
+		1D568BB11BB3792800DB4849 /* ALDemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoBaseViewController.h; sourceTree = "<group>"; };
+		1D568BB21BB3792800DB4849 /* ALDemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoBaseViewController.m; sourceTree = "<group>"; };
+		1D568BB41BB37BB900DB4849 /* ALDemoRewardedVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoRewardedVideosViewController.h; sourceTree = "<group>"; };
+		1D568BB51BB37BB900DB4849 /* ALDemoRewardedVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoRewardedVideosViewController.m; sourceTree = "<group>"; };
+		1D568BB91BB388A600DB4849 /* nav_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_logo.png; sourceTree = "<group>"; };
+		1D568BBB1BB388F500DB4849 /* ALDemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoRootViewController.h; sourceTree = "<group>"; };
+		1D568BBC1BB388F500DB4849 /* ALDemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoRootViewController.m; sourceTree = "<group>"; };
+		1D5D96891BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoInterstitialSingleInstanceViewController.h; sourceTree = "<group>"; };
+		1D5D968A1BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoInterstitialSingleInstanceViewController.m; sourceTree = "<group>"; };
+		1D5D968C1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoInterstitialSharerdInstanceViewController.h; sourceTree = "<group>"; };
+		1D5D968D1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoInterstitialSharerdInstanceViewController.m; sourceTree = "<group>"; };
 		1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1DC3E96C1BB320190093EF2A /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
 		1DC3E96D1BB320190093EF2A /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
@@ -101,24 +111,10 @@
 		2713D03418EDDD0C006218B2 /* iOS-SDK-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-SDK-DemoTests-Info.plist"; sourceTree = "<group>"; };
 		2713D03618EDDD0C006218B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2713D03818EDDD0C006218B2 /* iOS_SDK_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_SDK_DemoTests.m; sourceTree = "<group>"; };
-		277F7B1F18EDDE54001F2E1F /* ALDemoRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoRootController.h; sourceTree = "<group>"; };
-		277F7B2018EDDE54001F2E1F /* ALDemoRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoRootController.m; sourceTree = "<group>"; };
-		27C0E1A418EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoProgrammaticInterstitialViewController.h; sourceTree = "<group>"; };
-		27C0E1A518EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoProgrammaticInterstitialViewController.m; sourceTree = "<group>"; };
 		27C0E1AA18EF25ED00CB3405 /* YourSDKKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourSDKKey.h; sourceTree = "<group>"; };
-		27C0E1AD18EF294600CB3405 /* ALDemoManualPrecachingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoManualPrecachingViewController.h; sourceTree = "<group>"; };
-		27C0E1AE18EF294600CB3405 /* ALDemoManualPrecachingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoManualPrecachingViewController.m; sourceTree = "<group>"; };
-		27C0E1B018EF393500CB3405 /* ALDemoRewardedVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoRewardedVideoViewController.h; sourceTree = "<group>"; };
-		27C0E1B118EF393500CB3405 /* ALDemoRewardedVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoRewardedVideoViewController.m; sourceTree = "<group>"; };
-		27F8E01618EE0F4D0046A235 /* ALDemoBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoBannerViewController.h; sourceTree = "<group>"; };
-		27F8E01718EE0F4D0046A235 /* ALDemoBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoBannerViewController.m; sourceTree = "<group>"; };
-		27F8E01918EE10750046A235 /* ALDemoInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoInterstitialViewController.h; sourceTree = "<group>"; };
-		27F8E01A18EE10750046A235 /* ALDemoInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoInterstitialViewController.m; sourceTree = "<group>"; };
 		27F8E02418EE13190046A235 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		27F8E02618EE131E0046A235 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		27F8E02818EE13250046A235 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		27F8E03218EE1DD00046A235 /* ALDemoProgrammaticBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoProgrammaticBannerViewController.h; sourceTree = "<group>"; };
-		27F8E03318EE1DD00046A235 /* ALDemoProgrammaticBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoProgrammaticBannerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +149,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D568BB01BB3790400DB4849 /* Interstitials */ = {
+			isa = PBXGroup;
+			children = (
+				1D5D96891BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.h */,
+				1D5D968A1BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.m */,
+				1D5D968C1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.h */,
+				1D5D968D1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.m */,
+			);
+			name = Interstitials;
+			sourceTree = "<group>";
+		};
 		1DC3E96B1BB320190093EF2A /* headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +252,7 @@
 				1DC3E9961BB3249D0093EF2A /* logo.png */,
 				2713D01918EDDD0C006218B2 /* main.m */,
 				2713D01F18EDDD0C006218B2 /* Main.storyboard */,
+				1D568BB91BB388A600DB4849 /* nav_logo.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,9 +278,12 @@
 		277F7B1C18EDDE27001F2E1F /* SDK Examples */ = {
 			isa = PBXGroup;
 			children = (
-				27C0E1A918EF25A800CB3405 /* Advanced Features */,
+				1D568BB01BB3790400DB4849 /* Interstitials */,
 				27C0E1A818EF259C00CB3405 /* Programmatic Integration */,
-				27C0E1A718EF259300CB3405 /* Basic Integration */,
+				1D568BB41BB37BB900DB4849 /* ALDemoRewardedVideosViewController.h */,
+				1D568BB51BB37BB900DB4849 /* ALDemoRewardedVideosViewController.m */,
+				1D568BBB1BB388F500DB4849 /* ALDemoRootViewController.h */,
+				1D568BBC1BB388F500DB4849 /* ALDemoRootViewController.m */,
 			);
 			name = "SDK Examples";
 			sourceTree = "<group>";
@@ -283,44 +294,18 @@
 				1D47D8E01BB32A4500F33ADA /* ALDebugLog.h */,
 				2713D01C18EDDD0C006218B2 /* ALDemoAppDelegate.h */,
 				2713D01D18EDDD0C006218B2 /* ALDemoAppDelegate.m */,
-				277F7B1F18EDDE54001F2E1F /* ALDemoRootController.h */,
-				277F7B2018EDDE54001F2E1F /* ALDemoRootController.m */,
+				1D568BB11BB3792800DB4849 /* ALDemoBaseViewController.h */,
+				1D568BB21BB3792800DB4849 /* ALDemoBaseViewController.m */,
 			);
 			name = Components;
-			sourceTree = "<group>";
-		};
-		27C0E1A718EF259300CB3405 /* Basic Integration */ = {
-			isa = PBXGroup;
-			children = (
-				27F8E01618EE0F4D0046A235 /* ALDemoBannerViewController.h */,
-				27F8E01718EE0F4D0046A235 /* ALDemoBannerViewController.m */,
-				27F8E01918EE10750046A235 /* ALDemoInterstitialViewController.h */,
-				27F8E01A18EE10750046A235 /* ALDemoInterstitialViewController.m */,
-			);
-			name = "Basic Integration";
 			sourceTree = "<group>";
 		};
 		27C0E1A818EF259C00CB3405 /* Programmatic Integration */ = {
 			isa = PBXGroup;
 			children = (
-				27F8E03218EE1DD00046A235 /* ALDemoProgrammaticBannerViewController.h */,
-				27F8E03318EE1DD00046A235 /* ALDemoProgrammaticBannerViewController.m */,
-				27C0E1A418EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.h */,
-				27C0E1A518EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.m */,
 				27C0E1AA18EF25ED00CB3405 /* YourSDKKey.h */,
 			);
 			name = "Programmatic Integration";
-			sourceTree = "<group>";
-		};
-		27C0E1A918EF25A800CB3405 /* Advanced Features */ = {
-			isa = PBXGroup;
-			children = (
-				27C0E1AD18EF294600CB3405 /* ALDemoManualPrecachingViewController.h */,
-				27C0E1AE18EF294600CB3405 /* ALDemoManualPrecachingViewController.m */,
-				27C0E1B018EF393500CB3405 /* ALDemoRewardedVideoViewController.h */,
-				27C0E1B118EF393500CB3405 /* ALDemoRewardedVideoViewController.m */,
-			);
-			name = "Advanced Features";
 			sourceTree = "<group>";
 		};
 		27F8E00218EE0E550046A235 /* AppLovin SDK */ = {
@@ -413,6 +398,7 @@
 				1DC3E9971BB3249D0093EF2A /* logo.png in Resources */,
 				2713D02618EDDD0C006218B2 /* Images.xcassets in Resources */,
 				2713D01818EDDD0C006218B2 /* InfoPlist.strings in Resources */,
+				1D568BBA1BB388A600DB4849 /* nav_logo.png in Resources */,
 				2713D02118EDDD0C006218B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,15 +418,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D568BB61BB37BB900DB4849 /* ALDemoRewardedVideosViewController.m in Sources */,
+				1D568BB31BB3792800DB4849 /* ALDemoBaseViewController.m in Sources */,
 				2713D01E18EDDD0C006218B2 /* ALDemoAppDelegate.m in Sources */,
-				27C0E1B218EF393500CB3405 /* ALDemoRewardedVideoViewController.m in Sources */,
+				1D5D968B1BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.m in Sources */,
 				2713D01A18EDDD0C006218B2 /* main.m in Sources */,
-				27C0E1A618EF258E00CB3405 /* ALDemoProgrammaticInterstitialViewController.m in Sources */,
-				27F8E01818EE0F4D0046A235 /* ALDemoBannerViewController.m in Sources */,
-				27C0E1AF18EF294600CB3405 /* ALDemoManualPrecachingViewController.m in Sources */,
-				277F7B2118EDDE54001F2E1F /* ALDemoRootController.m in Sources */,
-				27F8E03418EE1DD00046A235 /* ALDemoProgrammaticBannerViewController.m in Sources */,
-				27F8E01B18EE10750046A235 /* ALDemoInterstitialViewController.m in Sources */,
+				1D5D968E1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.m in Sources */,
+				1D568BBD1BB388F500DB4849 /* ALDemoRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
