@@ -34,18 +34,18 @@
 -(void) loadNextAd: (alnonnull ALAdSize *) adSize andNotify: (alnullable id<ALAdLoadDelegate>)delegate;
 
 /**
- * Pre-load an ad of a given size in the background, if one is not already available.
+ * Preload an ad of a given size in the background, if one is not already available.
  *
  * @param adSize Size of the ad to cache.
  */
 -(void) preloadAdOfSize: (alnonnull ALAdSize*) adSize;
 
 /**
- * Check whether an ad of a given size is pre-loaded and ready to be displayed.
+ * Check whether an ad of a given size is preloaded and ready to be displayed.
  *
  * @param adSize Size of the ad to check for.
  *
- * @return YES if an ad of this size is pre-loaded and ready to display without further network activity. NO if requesting an ad of this size would require fetching over the network.
+ * @return YES if an ad of this size is preloaded and ready to display without further network activity. NO if requesting an ad of this size would require fetching over the network.
  */
 -(BOOL) hasPreloadedAdOfSize: (alnonnull ALAdSize*) adSize;
 

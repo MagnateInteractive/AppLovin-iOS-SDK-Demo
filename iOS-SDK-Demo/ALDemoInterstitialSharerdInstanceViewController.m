@@ -29,7 +29,7 @@
     }
     else
     {
-        // Ideally, the SDK pre-loads ads when you initialize it in application:didFinishLaunchingWithOptions: of the app delegate
+        // Ideally, the SDK preloads ads when you initialize it in application:didFinishLaunchingWithOptions: of the app delegate
         [self loadInterstitial: nil];
     }
 }

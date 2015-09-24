@@ -18,24 +18,28 @@
 {
     [super viewDidLoad];
     
-    NSString *appVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
-    
-    UILabel *footer = [[UILabel alloc] init];
-    footer.text = [NSString stringWithFormat: @"App Version: %@\n\nSDK Version: %@", appVersion, [ALSdk version]];
-    footer.textAlignment = NSTextAlignmentCenter;
-    footer.font = [UIFont systemFontOfSize: 14.0f];
-    footer.numberOfLines = 0;
-    CGRect frame = footer.frame;
-    frame.size.height = [footer sizeThatFits: CGSizeMake(CGRectGetWidth(footer.frame), CGFLOAT_MAX)].height + 60.0f;
-    footer.frame = frame;
-    self.tableView.tableFooterView = footer;
+    [self.navigationController setToolbarHidden: YES];
     
     UIImageView *logo = [[UIImageView alloc] initWithFrame: CGRectMake(0.0f, 0.0f, 40.0f, 40.0f)];
     logo.contentMode = UIViewContentModeScaleAspectFit;
     logo.image = [UIImage imageNamed: @"nav_logo"];
     self.navigationItem.titleView = logo;
     
-    [self.navigationController setToolbarHidden: YES];
+    UILabel *footer = [[UILabel alloc] init];
+    footer.font = [UIFont systemFontOfSize: 14.0f];
+    footer.numberOfLines = 0;
+    
+    NSString *appVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
+    NSString *text = [NSString stringWithFormat: @"App Version: %@\nSDK Version: %@", appVersion, [ALSdk version]];
+    NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
+    style.alignment =  NSTextAlignmentCenter;
+    style.minimumLineHeight = 20.f;
+    footer.attributedText = [[NSAttributedString alloc] initWithString: text attributes: @{NSParagraphStyleAttributeName : style}];
+    
+    CGRect frame = footer.frame;
+    frame.size.height = [footer sizeThatFits: CGSizeMake(CGRectGetWidth(footer.frame), CGFLOAT_MAX)].height + 60.0f;
+    footer.frame = frame;
+    self.tableView.tableFooterView = footer;
 }
 
 @end

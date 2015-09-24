@@ -47,7 +47,7 @@
 +(alnonnull ALIncentivizedInterstitialAd*) shared;
 
 /**
- * Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.
+ * Preload an incentivized interstitial, and notify your provided Ad Load Delegate.
  *
  * Invoke once to preload, then do not invoke again until the ad has has been closed (e.g., ALAdDisplayDelegate's adWasHidden callback).
  * You may pass a nil argument to preloadAndNotify if you intend to use the synchronous ( isIncentivizedAdReady ) flow. Note that this is NOT recommended; we HIGHLY RECOMMEND you use an ad load delegate.
@@ -68,14 +68,14 @@
 +(BOOL) isReadyForDisplay;
 
 /**
- * Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.
+ * Show an incentivized interstitial over the current key window, using the most recently preloaded ad.
  *
  * You must call preloadAndNotify before calling showOver.
  */
 +(void) show;
 
 /**
- * Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.
+ * Show an incentivized interstitial over the current key window, using the most recently preloaded ad.
  *
  * You must call preloadAndNotify before calling showOver.
  *
@@ -90,7 +90,7 @@
 +(void) showAndNotify: (alnullable id<ALAdRewardDelegate>) adRewardDelegate;
 
 /**
- * Show an incentivized interstitial, using the most recently pre-loaded ad.
+ * Show an incentivized interstitial, using the most recently preloaded ad.
  *
  * You must call preloadAndNotify before calling showOver.
  *
@@ -120,7 +120,7 @@
 -(alnonnull instancetype) initIncentivizedInterstitialWithSdk: (alnonnull ALSdk*) anSdk __deprecated_msg("Use initWithSdk instead.");
 
 /**
- * Pre-load an incentivized interstitial, and notify your provided Ad Load Delegate.
+ * Preload an incentivized interstitial, and notify your provided Ad Load Delegate.
  *
  * Invoke once to preload, then do not invoke again until the ad has has been closed (e.g., ALAdDisplayDelegate's adWasHidden callback).
  * You may pass a nil argument to preloadAndNotify if you intend to use the synchronous ( isIncentivizedAdReady ) flow. Note that this is NOT recommended; we HIGHLY RECOMMEND you use an ad load delegate.
@@ -140,14 +140,14 @@
 @property (readonly, atomic, getter=isReadyForDisplay) BOOL readyForDisplay;
 
 /**
- * Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.
+ * Show an incentivized interstitial over the current key window, using the most recently preloaded ad.
  *
  * You must call preloadAndNotify before calling showOver.
  */
 -(void) show;
 
 /**
- * Show an incentivized interstitial over the current key window, using the most recently pre-loaded ad.
+ * Show an incentivized interstitial over the current key window, using the most recently preloaded ad.
  *
  * You must call preloadAndNotify before calling showOver.
  *
@@ -162,7 +162,7 @@
 -(void) showAndNotify: (alnullable id<ALAdRewardDelegate>) adRewardDelegate;
 
 /**
- * Show an incentivized interstitial, using the most recently pre-loaded ad.
+ * Show an incentivized interstitial, using the most recently preloaded ad.
  *
  * You must call preloadAndNotify before calling showOver.
  *

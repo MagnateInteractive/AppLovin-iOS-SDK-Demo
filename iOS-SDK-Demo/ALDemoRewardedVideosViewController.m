@@ -27,7 +27,7 @@
     }
     else
     {
-        // Ideally, the SDK pre-loads ads when you initialize it in application:didFinishLaunchingWithOptions: of the app delegate
+        // Ideally, the SDK preloads ads when you initialize it in application:didFinishLaunchingWithOptions: of the app delegate
         [self preloadRewardedVideo: nil];
     }
 }
@@ -35,6 +35,7 @@
 // Unlike interstitials, you need to preload each rewarded video before it can be displayed.
 - (IBAction)preloadRewardedVideo:(id)sender
 {
+    [self log: [NSString stringWithFormat: @"Preloading"]];
     [[ALIncentivizedInterstitialAd shared] preloadAndNotify: self];
 }
 
@@ -47,7 +48,7 @@
 
 - (void)adService:(ALAdService *)adService didFailToLoadAdWithError:(int)code
 {
-     [self log: [NSString stringWithFormat: @"Rewarded video failed to load with error code = %d", code]];
+     [self log: [NSString stringWithFormat: @"Rewarded video failed to load with error code %d", code]];
 }
 
 #pragma mark - Ad Reward Delegate

@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Initializing our SDK at launch is very important as it'll start pre-loading ads in the background.
+    // Initializing our SDK at launch is very important as it'll start preloading ads in the background.
     [ALSdk initializeSdk];
     
     [[UINavigationBar appearance] setTranslucent: NO];
