@@ -10,6 +10,9 @@
 #import "ALSdk.h"
 #import <MEssageUI/MFMailComposeViewController.h>
 
+@interface ALDemoRootViewController()<MFMailComposeViewControllerDelegate>
+@end
+
 @implementation ALDemoRootViewController
 
 - (void)viewDidLoad
@@ -17,7 +20,7 @@
     [super viewDidLoad];
     
     [self.navigationController setToolbarHidden: YES];
-    
+
     UIImageView *logo = [[UIImageView alloc] initWithFrame: CGRectMake(0.0f, 0.0f, 40.0f, 40.0f)];
     logo.contentMode = UIViewContentModeScaleAspectFit;
     logo.image = [UIImage imageNamed: @"nav_logo"];
