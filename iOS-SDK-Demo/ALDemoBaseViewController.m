@@ -8,9 +8,6 @@
 
 #import "ALDemoBaseViewController.h"
 
-@interface ALDemoBaseViewController ()
-@end
-
 @implementation ALDemoBaseViewController
 
 #pragma mark - View Lifecycle
