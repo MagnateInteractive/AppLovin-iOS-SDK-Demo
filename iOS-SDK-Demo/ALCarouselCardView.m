@@ -303,16 +303,7 @@ static NSString * const TAG = @"ALCarouselCardView";
 {
     if ( ad )
     {
-        NSURL *clickURL = ad.clickURL;
-        if ( [[UIApplication sharedApplication] canOpenURL: clickURL] )
-        {
-            ALLog(@"Opening CTA URL %@ for native ad (%@)", clickURL, ad.adIdNumber.stringValue);
-            [[UIApplication sharedApplication] openURL: clickURL];
-        }
-        else
-        {
-            ALLog(@"Trying to open invalid CTA URL %@ for native ad (%@)", clickURL, ad.adIdNumber.stringValue);
-        }
+        [ad launchClickTarget];
     }
     else
     {
