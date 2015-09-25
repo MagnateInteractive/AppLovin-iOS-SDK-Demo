@@ -26,6 +26,8 @@
     
     self.ctaButton.layer.masksToBounds = YES;
     self.ctaButton.layer.cornerRadius = 3.0f;
+    
+    [self setUIElementsHidden: YES];
 }
 
 #pragma mark - Action Methods
@@ -60,12 +62,14 @@
     self.titleLabel.text = self.nativeAd.title;
     self.descriptionLabel.text = self.nativeAd.descriptionText;
     [self.ctaButton setTitle: self.nativeAd.ctaText forState: UIControlStateNormal];
-
+    
     NSString *filename = [NSString stringWithFormat: @"Star_Sprite_%@", self.nativeAd.starRating.stringValue];
     self.rating.image = [UIImage imageNamed: filename];
     
     // NOTE - Videos have aspect ratio of 1:1.85
     [self.mediaView renderViewForNativeAd: self.nativeAd];
+    
+    [self setUIElementsHidden: NO];
     
     //
     // You are responsible for firing all necessary postback URLs
@@ -154,6 +158,18 @@
 - (void)nativeAdService:(alnonnull ALNativeAdService *)service didFailToPrecacheVideoForAd:(alnonnull ALNativeAd *)ad withError:(NSInteger)errorCode
 {
     [self log: [NSString stringWithFormat: @"Native ad failed to precache video with error code %lu", errorCode]];
+}
+
+#pragma mark - Utility
+
+- (void)setUIElementsHidden:(BOOL)hidden
+{
+    self.appIcon.hidden = hidden;
+    self.titleLabel.hidden = hidden;
+    self.rating.hidden = hidden;
+    self.descriptionLabel.hidden = hidden;
+    self.mediaView.hidden = hidden;
+    self.ctaButton.hidden = hidden;
 }
 
 @end

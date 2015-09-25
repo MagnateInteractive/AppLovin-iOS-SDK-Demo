@@ -39,7 +39,7 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="INTEGRATIONS" id="bjb-Je-8SJ">
+                            <tableViewSection headerTitle="AD INTEGRATIONS" id="bjb-Je-8SJ">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rootPrototype" textLabel="Mvl-U5-gG6" detailTextLabel="KhQ-nh-svh" style="IBUITableViewCellStyleSubtitle" id="qnM-mH-Xbj">
                                         <rect key="frame" x="0.0" y="114" width="600" height="44"/>
@@ -55,8 +55,8 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Full screen ads. Graphic or video." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KhQ-nh-svh">
-                                                    <rect key="frame" x="15" y="25" width="176" height="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Full screen ads. Graphic or video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KhQ-nh-svh">
+                                                    <rect key="frame" x="15" y="25" width="173" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,15 +75,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Rewarded Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GWR-bJ-SGd">
-                                                    <rect key="frame" x="15" y="5" width="127" height="20"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Rewarded Videos (Incentivized Ads)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GWR-bJ-SGd">
+                                                    <rect key="frame" x="15" y="5" width="261" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="On-demand videos with a kickback." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QFi-8X-ixj">
-                                                    <rect key="frame" x="15" y="25" width="188" height="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Reward your users for watching these on-demand videos " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QFi-8X-ixj">
+                                                    <rect key="frame" x="15" y="25" width="303" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="-34" y="-96"/>
         </scene>
-        <!--Interstitial Implementations-->
+        <!--Interstitials-->
         <scene sceneID="rEF-ld-bE2">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="QYQ-e9-5uQ" customClass="ALDemoBaseTableViewController" sceneMemberID="viewController">
@@ -189,15 +189,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Using single instance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="75s-Ku-Iq4">
-                                                    <rect key="frame" x="15" y="5" width="154" height="20"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Single instance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="75s-Ku-Iq4">
+                                                    <rect key="frame" x="15" y="5" width="110" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Display by programatically creating a single instance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KoD-xF-j1J">
-                                                    <rect key="frame" x="15" y="25" width="276" height="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Programatically creating an instance of it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KoD-xF-j1J">
+                                                    <rect key="frame" x="15" y="25" width="215" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -216,15 +216,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Using shared instance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5k2-Pv-1OZ">
-                                                    <rect key="frame" x="15" y="5" width="161" height="20"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Shared instance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5k2-Pv-1OZ">
+                                                    <rect key="frame" x="15" y="5" width="117" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Display by using the shared instance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oHO-OP-dKL">
-                                                    <rect key="frame" x="15" y="25" width="193" height="14"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use the shared instance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oHO-OP-dKL">
+                                                    <rect key="frame" x="15" y="25" width="128" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -236,11 +236,38 @@
                                             <segue destination="IVf-ds-rcm" kind="show" id="Xtc-Wx-eZa"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rootPrototype" textLabel="sB8-wC-uno" detailTextLabel="S2b-ct-5Ji" style="IBUITableViewCellStyleSubtitle" id="fMq-f9-XRv">
+                                        <rect key="frame" x="0.0" y="187" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fMq-f9-XRv" id="2SJ-BY-qIL">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Manually loading ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sB8-wC-uno">
+                                                    <rect key="frame" x="15" y="5" width="144" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Use this for greater control over the ad load process" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S2b-ct-5Ji">
+                                                    <rect key="frame" x="15" y="25" width="275" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lTK-Oi-Niw" kind="show" id="sXo-g3-tHB"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Interstitial Implementations" id="hmW-qG-4TP"/>
+                    <navigationItem key="navigationItem" title="Interstitials" id="hmW-qG-4TP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gga-VD-iwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,12 +300,6 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Load" id="1mE-Ed-Lkd">
-                            <color key="tintColor" red="0.039215686270000001" green="0.51372549020000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="loadInterstitial:" destination="vSY-NH-TSN" id="X5C-pf-Cxb"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="YEq-LY-I3x">
                             <color key="tintColor" red="0.039215686270000001" green="0.51372549020000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -325,12 +346,6 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Load" id="Mmz-ws-y5z">
-                            <color key="tintColor" red="0.039215686270000001" green="0.51372549020000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="loadInterstitial:" destination="IVf-ds-rcm" id="ggi-Gj-Di9"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="e9q-Jz-A89"/>
                         <barButtonItem title="Show if Ready" id="GB4-TG-oNA">
                             <color key="tintColor" red="0.039215686270000001" green="0.51372549020000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -442,7 +457,7 @@
             </objects>
             <point key="canvasLocation" x="685" y="-770"/>
         </scene>
-        <!--Native Implementations-->
+        <!--Native Ads-->
         <scene sceneID="EDA-QI-XPv">
             <objects>
                 <tableViewController hidesBottomBarWhenPushed="YES" id="dtX-W4-FOO" customClass="ALDemoBaseTableViewController" sceneMemberID="viewController">
@@ -458,7 +473,21 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6S-Xc-nuN">
                                     <rect key="frame" x="20" y="0.0" width="560" height="50"/>
                                     <attributedString key="attributedText">
-                                        <fragment content="You must turn ON &quot;Native Ads&quot; in AppLovin dashboard">
+                                        <fragment content="You must turn ">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="ON">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" &quot;Native Ads&quot; in AppLovin dashboard">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -538,7 +567,7 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Native Implementations" id="wly-hq-kAY"/>
+                    <navigationItem key="navigationItem" title="Native Ads" id="wly-hq-kAY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HML-MH-VE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -846,6 +875,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6S0-ii-CRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1381" y="-96"/>
+        </scene>
+        <!--Shared Instance-->
+        <scene sceneID="o3v-S8-Lpr">
+            <objects>
+                <viewController id="lTK-Oi-Niw" customClass="ALDemoInterstitialManualLoadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zX2-aQ-NrT"/>
+                        <viewControllerLayoutGuide type="bottom" id="aW6-yi-OHP"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="JIJ-k1-HZn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to load ads." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPu-9p-dao">
+                                <rect key="frame" x="214" y="288" width="173" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mPu-9p-dao" firstAttribute="centerX" secondItem="JIJ-k1-HZn" secondAttribute="centerX" id="0wz-fE-8Pi"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="mPu-9p-dao" secondAttribute="trailing" id="LVN-AX-1GO"/>
+                            <constraint firstItem="mPu-9p-dao" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JIJ-k1-HZn" secondAttribute="leadingMargin" id="PGg-pQ-Y9A"/>
+                            <constraint firstItem="mPu-9p-dao" firstAttribute="centerY" secondItem="JIJ-k1-HZn" secondAttribute="centerY" id="SYq-tg-ago"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Load" id="Ylz-1w-Jkw">
+                            <color key="tintColor" red="0.039215686270000001" green="0.51372549020000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="loadInterstitial:" destination="lTK-Oi-Niw" id="Gyy-J7-eSs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="UhF-Kb-pRD"/>
+                        <barButtonItem enabled="NO" title="Show" id="iiU-vg-8gS">
+                            <color key="tintColor" red="0.039215686270000001" green="0.51372549020000002" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showInterstitial:" destination="lTK-Oi-Niw" id="8Pt-qj-VP9"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Shared Instance" id="7wd-uu-jsA"/>
+                    <connections>
+                        <outlet property="adStatusLabel" destination="mPu-9p-dao" id="QJ8-5Q-Ku8"/>
+                        <outlet property="showButton" destination="iiU-vg-8gS" id="1Yv-s4-g5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAg-YI-cJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2724" y="-1434"/>
         </scene>
     </scenes>
     <resources>

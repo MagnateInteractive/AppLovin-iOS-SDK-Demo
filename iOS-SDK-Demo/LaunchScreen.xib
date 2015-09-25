@@ -15,8 +15,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqL-nm-86X">
                     <rect key="frame" x="150" y="116" width="180" height="248"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="OAm-DU-bW8">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="OAm-DU-bW8">
                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="180" id="0cs-K4-5j6"/>
                                 <constraint firstAttribute="width" secondItem="OAm-DU-bW8" secondAttribute="height" multiplier="1:1" id="oLU-uY-1Hd"/>

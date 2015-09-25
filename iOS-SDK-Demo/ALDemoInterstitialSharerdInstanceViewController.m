@@ -26,17 +26,14 @@
         [ALInterstitialAd shared].adVideoPlaybackDelegate = self; // This will only ever be used if you have video ads enabled.
         
         [[ALInterstitialAd shared] show];
+        [self log: @"Interstitial Showed"];
     }
     else
     {
         // Ideally, the SDK preloads ads when you initialize it in application:didFinishLaunchingWithOptions: of the app delegate
-        [self loadInterstitial: nil];
+        // you can manually load an ad as demonstrated in the ALDemoInterstitialManualLoadingViewController class
+        [self log: @"Interstitial not ready for display.\nPlease check SDK key or internet connection."];
     }
-}
-
-- (IBAction)loadInterstitial:(id)sender
-{
-    [[ALSdk shared].adService loadNextAd: [ALAdSize sizeInterstitial] andNotify: self];
 }
 
 #pragma mark - Ad Load Delegate

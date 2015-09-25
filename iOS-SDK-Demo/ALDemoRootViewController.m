@@ -25,22 +25,8 @@
     logo.contentMode = UIViewContentModeScaleAspectFit;
     logo.image = [UIImage imageNamed: @"nav_logo"];
     self.navigationItem.titleView = logo;
-    
-    UILabel *footer = [[UILabel alloc] init];
-    footer.font = [UIFont systemFontOfSize: 14.0f];
-    footer.numberOfLines = 0;
-    
-    NSString *appVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
-    NSString *text = [NSString stringWithFormat: @"App Version: %@\nSDK Version: %@", appVersion, [ALSdk version]];
-    NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
-    style.alignment =  NSTextAlignmentCenter;
-    style.minimumLineHeight = 20.f;
-    footer.attributedText = [[NSAttributedString alloc] initWithString: text attributes: @{NSParagraphStyleAttributeName : style}];
-    
-    CGRect frame = footer.frame;
-    frame.size.height = [footer sizeThatFits: CGSizeMake(CGRectGetWidth(footer.frame), CGFLOAT_MAX)].height + 60.0f;
-    footer.frame = frame;
-    self.tableView.tableFooterView = footer;
+
+    [self addFooterLabel];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -104,7 +90,29 @@
             break;
     }
 
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated: YES completion: nil];
+}
+
+- (void)addFooterLabel
+{
+    UILabel *footer = [[UILabel alloc] init];
+    footer.font = [UIFont systemFontOfSize: 14.0f];
+    footer.numberOfLines = 0;
+    
+    NSString *appVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
+    NSString *sdkVersion = [ALSdk version];
+    NSString *sdkKey = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"AppLovinSdkKey"];
+    NSString *text = [NSString stringWithFormat: @"App Version: %@\nSDK Version: %@\nSDK Key: %@", appVersion, sdkVersion, sdkKey];
+    
+    NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
+    style.alignment =  NSTextAlignmentCenter;
+    style.minimumLineHeight = 20.f;
+    footer.attributedText = [[NSAttributedString alloc] initWithString: text attributes: @{NSParagraphStyleAttributeName : style}];
+    
+    CGRect frame = footer.frame;
+    frame.size.height = [footer sizeThatFits: CGSizeMake(CGRectGetWidth(footer.frame), CGFLOAT_MAX)].height + 60.0f;
+    footer.frame = frame;
+    self.tableView.tableFooterView = footer;
 }
 
 @end
