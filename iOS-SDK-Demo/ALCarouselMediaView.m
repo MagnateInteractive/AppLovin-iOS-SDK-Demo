@@ -42,35 +42,54 @@ static NSString * const TAG = @"ALCarouselMediaView";
 
 #pragma mark - Initialization Methods
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self)
+    {
+        self.sdk = [ALSdk shared];
+        [self setup];
+    }
+    return self;
+}
+
 - (alnonnull instancetype) initWithSdk:(alnonnull ALSdk *)sdk parentView: (alnonnull ALCarouselCardView*) parentView;
 {
     self = [super init];
-    
     if ( self )
     {
         self.sdk    = sdk;
-        
         self.cardView = parentView;
-        self.backgroundColor = kVideoViewBackgroundColor;
-        
-        self.adImageView = [[UIImageView alloc] init];
-        self.adImageView.userInteractionEnabled = YES;
-        
-        UITapGestureRecognizer *adImageTapGesture = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(didTapAdImage:)];
-        [self.adImageView addGestureRecognizer: adImageTapGesture];
-        
-        self.replayOverlayView = [[ALCarouselReplayOverlayView alloc] initWithParentView: self];
-        self.replayOverlayView.alpha = 0.0f;
-        [self.replayOverlayView.replayIconButton    addTarget: self action: @selector(didTapReplayButton:)    forControlEvents: UIControlEventTouchUpInside];
-        [self.replayOverlayView.replayButton        addTarget: self action: @selector(didTapReplayButton:)    forControlEvents: UIControlEventTouchUpInside];
-        [self.replayOverlayView.learnMoreIconButton addTarget: self action: @selector(didTapLearnMoreButton:) forControlEvents: UIControlEventTouchUpInside];
-        [self.replayOverlayView.learnMoreButton     addTarget: self action: @selector(didTapLearnMoreButton:) forControlEvents: UIControlEventTouchUpInside];
-        
-        [self addSubview: self.adImageView];
-        [self addSubview: self.replayOverlayView];
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup
+{
+    self.backgroundColor = kVideoViewBackgroundColor;
+    
+    self.adImageView = [[UIImageView alloc] init];
+    self.adImageView.userInteractionEnabled = NO;
+    
+    UITapGestureRecognizer *adImageTapGesture = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(didTapAdImage:)];
+    [self.adImageView addGestureRecognizer: adImageTapGesture];
+    
+    if ( self.replayOverlayView )
+    {
+        [self.replayOverlayView removeFromSuperview];
     }
     
-    return self;
+    self.replayOverlayView = [[ALCarouselReplayOverlayView alloc] initWithParentView: self];
+    self.replayOverlayView.alpha = 0.0f;
+    self.replayOverlayView.userInteractionEnabled = YES;
+    [self.replayOverlayView.replayIconButton    addTarget: self action: @selector(didTapReplayButton:)    forControlEvents: UIControlEventTouchUpInside];
+    [self.replayOverlayView.replayButton        addTarget: self action: @selector(didTapReplayButton:)    forControlEvents: UIControlEventTouchUpInside];
+    [self.replayOverlayView.learnMoreIconButton addTarget: self action: @selector(didTapLearnMoreButton:) forControlEvents: UIControlEventTouchUpInside];
+    [self.replayOverlayView.learnMoreButton     addTarget: self action: @selector(didTapLearnMoreButton:) forControlEvents: UIControlEventTouchUpInside];
+    
+    [self addSubview: self.adImageView];
+    [self addSubview: self.replayOverlayView];
 }
 
 #pragma mark - App Notifications
@@ -132,7 +151,13 @@ static NSString * const TAG = @"ALCarouselMediaView";
     self.adImageView.frame = self.cardState.screenshot ? self.cardState.videoRect : self.bounds;
 }
 
-// Entry point
+// Entry points
+- (void)renderViewForNativeAd:(alnonnull ALNativeAd *)ad
+{
+    ALCarouselCardState *cardState = [ALCarouselCardState cardStateForSingleCard];
+    [self renderViewForNativeAd: ad cardState: cardState];
+}
+
 - (void)renderViewForNativeAd:(ALNativeAd *)ad cardState:(ALCarouselCardState *)cardState
 {
     if ( ad )
@@ -156,6 +181,8 @@ static NSString * const TAG = @"ALCarouselMediaView";
         // If we get to this point, ad image is pre-cached
         ALLog(@"Begin refresh media view for slot ID: %@ %@", ad.adIdNumber.stringValue, ad.title);
         
+        self.adImageView.userInteractionEnabled = YES;
+        
         // Populate ad image behind replay overlay
         if ( self.cardState.screenshot && !CGRectIsEmpty(self.cardState.videoRect) )
         {
@@ -166,7 +193,6 @@ static NSString * const TAG = @"ALCarouselMediaView";
         else
         {
             // Else, just set the ad image to the default one
-            
             self.adImageView.image = [UIImage imageWithData: [NSData dataWithContentsOfURL: ad.imageURL]];
             self.adImageView.frame = self.bounds;
         }
@@ -184,7 +210,7 @@ static NSString * const TAG = @"ALCarouselMediaView";
             self.replayOverlayView.alpha = 0.0f;
         }
         
-        // If this is the middle card, we give it special treatment
+        // If this is the middle/single card, we give it special treatment
         if ( self.cardState.currentlyActive )
         {
             // If the video is pre-cached or we should stream
@@ -215,6 +241,8 @@ static NSString * const TAG = @"ALCarouselMediaView";
 
 - (void)autoplayIfRequired
 {
+    self.adImageView.userInteractionEnabled = NO;
+    
     // Update the mute button regardless if we're autoplaying since we'll have to animate it regardless
     [self updateMuteState];
     
@@ -259,6 +287,7 @@ static NSString * const TAG = @"ALCarouselMediaView";
             self.adImageView.alpha = 0.0f;
         }];
         
+        self.adImageView.userInteractionEnabled = NO;
         self.videoView.alpha   = 1.0f;
         
         // When replaying a video we do not fade out the replay overlay
@@ -292,6 +321,7 @@ static NSString * const TAG = @"ALCarouselMediaView";
 - (void)setInactive
 {
     self.adImageView.alpha = 1.0f;
+    self.adImageView.userInteractionEnabled = YES;
     self.videoView.alpha   = 0.0f;
     self.muteButton.alpha  = 0.0f;
     self.playButton.alpha  = 0.0f;
@@ -373,7 +403,14 @@ static NSString * const TAG = @"ALCarouselMediaView";
 
 - (void)handleClick
 {
-    [self.cardView handleClickForAd: self.ad];
+    if ( self.cardView )
+    {
+        [self.cardView handleClickForAd: self.ad];
+    }
+    else
+    {
+        [self.ad launchClickTarget];
+    }
 }
 
 #pragma mark - Video Utility Methods
@@ -478,6 +515,7 @@ static NSString * const TAG = @"ALCarouselMediaView";
 {
     self.adImageView.image       = nil;
     self.adImageView.alpha       = 0.0f;
+    self.adImageView.userInteractionEnabled = NO;
     self.videoView.alpha         = 0.0f;
     self.replayOverlayView.alpha = 0.0f;
     self.cardState               = nil;
@@ -543,8 +581,11 @@ static NSString * const TAG = @"ALCarouselMediaView";
         self.playButton.alpha = 0.0f;
         [self.playButton addTarget: self action: @selector(didTapPlayButton:) forControlEvents: UIControlEventTouchUpInside];
         
-        UITapGestureRecognizer *videoTapGesture = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(didTapVideo:)];
-        [self.videoView addGestureRecognizer: videoTapGesture];
+        if ( kVideoClicksThrough )
+        {
+            UITapGestureRecognizer *videoTapGesture = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(didTapVideo:)];
+            [self.videoView addGestureRecognizer: videoTapGesture];
+        }
         
         [self insertSubview: self.videoView  belowSubview: self.adImageView];
         [self insertSubview: self.playButton aboveSubview: self.adImageView];

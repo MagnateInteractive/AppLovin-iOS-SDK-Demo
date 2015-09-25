@@ -12,11 +12,10 @@
 
 @protocol ALCarouselRenderingProtocol <NSObject>
 
-/**
- *  Updates the card view with the givein model object and an index.
- *
- *  @param ad  The native ad for which
- */
+@optional
+- (void)renderViewForNativeAd:(alnonnull ALNativeAd *)ad;
+
+@required
 - (void)renderViewForNativeAd:(alnonnull ALNativeAd *)ad cardState:(alnonnull ALCarouselCardState *)cardState;
 
 /**

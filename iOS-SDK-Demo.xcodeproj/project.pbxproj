@@ -48,6 +48,7 @@
 		1DC3E9871BB320190093EF2A /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC3E9861BB320190093EF2A /* libAppLovinSdk.a */; settings = {ASSET_TAGS = (); }; };
 		1DC3E98D1BB321660093EF2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		1DC3E9971BB3249D0093EF2A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E9961BB3249D0093EF2A /* logo.png */; settings = {ASSET_TAGS = (); }; };
+		1DFA1BEE1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA1BED1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2713D00E18EDDD0C006218B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00D18EDDD0C006218B2 /* Foundation.framework */; };
 		2713D01018EDDD0C006218B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00F18EDDD0C006218B2 /* CoreGraphics.framework */; };
 		2713D01218EDDD0C006218B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D01118EDDD0C006218B2 /* UIKit.framework */; };
@@ -164,6 +165,8 @@
 		1DC3E9861BB320190093EF2A /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinSdk.a; sourceTree = "<group>"; };
 		1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		1DC3E9961BB3249D0093EF2A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1DFA1BEC1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoNativeAdProgrammaticViewController.h; sourceTree = "<group>"; };
+		1DFA1BED1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoNativeAdProgrammaticViewController.m; sourceTree = "<group>"; };
 		2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2713D00D18EDDD0C006218B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2713D00F18EDDD0C006218B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -243,7 +246,8 @@
 		1D568BBF1BB392EA00DB4849 /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				1D7913051BB4821E006C6C60 /* Feed Implementation */,
+				1DFA1BEB1BB4AF4600CA13C2 /* Programatic Example */,
+				1D7913051BB4821E006C6C60 /* Feed Example */,
 			);
 			name = Native;
 			sourceTree = "<group>";
@@ -293,14 +297,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		1D7913051BB4821E006C6C60 /* Feed Implementation */ = {
+		1D7913051BB4821E006C6C60 /* Feed Example */ = {
 			isa = PBXGroup;
 			children = (
 				1D7913061BB48329006C6C60 /* ALDemoNativeAdFeedTableViewController.h */,
 				1D7913071BB48329006C6C60 /* ALDemoNativeAdFeedTableViewController.m */,
 				1D7912F21BB48140006C6C60 /* Carousel */,
 			);
-			name = "Feed Implementation";
+			name = "Feed Example";
 			sourceTree = "<group>";
 		};
 		1D79130B1BB4A830006C6C60 /* Assets */ = {
@@ -357,6 +361,15 @@
 				1DC3E9851BB320190093EF2A /* ALTargetingData.h */,
 			);
 			path = headers;
+			sourceTree = "<group>";
+		};
+		1DFA1BEB1BB4AF4600CA13C2 /* Programatic Example */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA1BEC1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.h */,
+				1DFA1BED1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m */,
+			);
+			name = "Programatic Example";
 			sourceTree = "<group>";
 		};
 		2713D00118EDDD0C006218B2 = {
@@ -614,6 +627,7 @@
 				1D5D968B1BB34EB700F296B0 /* ALDemoInterstitialSingleInstanceViewController.m in Sources */,
 				1D7912F11BB4813D006C6C60 /* ALCarouselViewModel.m in Sources */,
 				2713D01A18EDDD0C006218B2 /* main.m in Sources */,
+				1DFA1BEE1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m in Sources */,
 				1D5D968E1BB34F9F00F296B0 /* ALDemoInterstitialSharerdInstanceViewController.m in Sources */,
 				1D568BBD1BB388F500DB4849 /* ALDemoRootViewController.m in Sources */,
 				1D7913041BB48173006C6C60 /* ALCarouselView.m in Sources */,

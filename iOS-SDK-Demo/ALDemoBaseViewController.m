@@ -29,11 +29,13 @@
 
 - (void)log:(NSString *)message
 {
-    if ( self.adStatusLabel )
-    {
-        self.adStatusLabel.text = message;
-    }
-    ALLog(@"[%@] : %@", NSStringFromClass([self class]), message);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if ( self.adStatusLabel )
+        {
+            self.adStatusLabel.text = message;
+        }
+        ALLog(@"[%@] : %@", NSStringFromClass([self class]), message);        
+    });
 }
 
 @end

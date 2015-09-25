@@ -19,10 +19,23 @@
 #define kCarouselBackgroundColor              [UIColor whiteColor]
 #define kCardBackgroundColor                  [UIColor whiteColor]
 #define kCardButtonColor                      [UIColor colorWithWhite: 0.84f alpha: 1.0f]
-#define kVideoViewBackgroundColor             [UIColor clearColor]
-#define kVideoViewBackgroundWhilePlayingColor [UIColor clearColor]
+#define kVideoViewBackgroundColor             [UIColor blackColor]
+#define kVideoViewBackgroundWhilePlayingColor [UIColor blackColor]
 #define kReplayOverlayBackgroundColor         [UIColor blackColor]
 #define kButtonHighlightTint                  [UIColor colorWithWhite: 0.87f alpha: 1.0f]
+
+// Media controls
+static BOOL const kIsAutoplay                        = YES;
+static BOOL const kVideoClicksThrough                = YES;
+static BOOL const kConfigIsMuted                     = YES;
+static BOOL const kRenderVideoScreenshotAsFallbackImage     = YES;
+
+// Replay overlay controls
+static NSString *const kTextReplayVideo               = @"Replay Video";
+static NSString *const kTextLearnMore                 = @"Learn More";
+static CGFloat const kConfigReplayOverlayAlpha        = 0.75f;
+
+
 
 // Carousel constants
 static NSUInteger const kNativeAdsToLoadCount = 3;
@@ -69,16 +82,5 @@ static CGFloat const kMuteHeight                     = 20.0f;
 static CGFloat const kMuteButtonMargin               = 8.0f;
 static CGFloat const kPlayReplayWidth                = 40.0f;
 static CGFloat const kPlayReplayHeight               = 40.0f;
-
-// Media configurations
-static BOOL const kIsAutoplay                        = YES;
-static BOOL const kVideoClicksThrough                = YES;
-static BOOL const kConfigIsMuted                     = YES;
-static BOOL const kRenderVideoScreenshotAsFallbackImage     = YES;
-
-// Replay overlay configurations
-static NSString *const kTextReplayVideo               = @"Replay Video";
-static NSString *const kTextLearnMore                 = @"Learn More";
-static CGFloat const kConfigReplayOverlayAlpha        = 0.75f;
 
 #endif
