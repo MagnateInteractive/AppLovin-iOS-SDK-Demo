@@ -1,9 +1,0 @@
-__Instructions on running this demo app__
-
-1) Log in and download the latest SDK here: https://applovin.com/integration#iosIntegration
-
-2) Drag the libAppLovinSdk.a file and "headers" folder from the downloaded zip file into the "AppLovin SDK HERE" folder
-
-3) In the iOS-SDK-Demo-Info.plist file, add your sdk key to the "AppLovinSdkKey" row
-
-4) Monetize :)
