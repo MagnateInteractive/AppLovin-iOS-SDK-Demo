@@ -26,7 +26,7 @@
         [ALInterstitialAd shared].adVideoPlaybackDelegate = self; // This will only ever be used if you have video ads enabled.
         
         [[ALInterstitialAd shared] show];
-        [self log: @"Interstitial Showed"];
+        [self log: @"Interstitial Shown"];
     }
     else
     {

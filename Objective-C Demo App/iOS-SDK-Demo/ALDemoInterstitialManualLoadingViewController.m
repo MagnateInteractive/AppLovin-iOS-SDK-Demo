@@ -29,7 +29,7 @@
     
     [[ALInterstitialAd shared] showOver: [UIApplication sharedApplication].keyWindow andRender: self.ad];
     
-    [self log: @"Interstitial showed"];
+    [self log: @"Interstitial Shown"];
 }
 
 #pragma mark - Ad Load Delegate

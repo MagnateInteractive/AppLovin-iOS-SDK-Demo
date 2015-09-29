@@ -26,7 +26,7 @@ class ALDemoInterstitialSingleInstanceViewController: ALDemoBaseViewController, 
             self.interstitial?.adVideoPlaybackDelegate = self; // This will only ever be used if you have video ads enabled.
             
             self.interstitial?.show()
-            self.log("Interstitial Showed")
+            self.log("Interstitial Shown")
         }
         else
         {
