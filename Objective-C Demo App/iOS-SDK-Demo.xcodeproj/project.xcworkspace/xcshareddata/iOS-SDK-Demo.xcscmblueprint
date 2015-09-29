@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F52C9977C1ED38CCE15D98A0FB509E891E09204F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EA83DF0A566CDEF827D76DD8DC3B20FC63E6E124" : 0,
+    "F52C9977C1ED38CCE15D98A0FB509E891E09204F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "30A0BD98-6363-4B2A-B080-8B512B41B63F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EA83DF0A566CDEF827D76DD8DC3B20FC63E6E124" : "SDK\/AppLovin-iPhone-SDK-TestApp\/",
+    "F52C9977C1ED38CCE15D98A0FB509E891E09204F" : "iOS-Demo-App"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iOS-SDK-Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS-SDK-Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AppLovin\/AppLovin-iPhone-SDK-TestApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA83DF0A566CDEF827D76DD8DC3B20FC63E6E124"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/thomasmso\/iOS-Demo-App.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F52C9977C1ED38CCE15D98A0FB509E891E09204F"
+    }
+  ]
+}
