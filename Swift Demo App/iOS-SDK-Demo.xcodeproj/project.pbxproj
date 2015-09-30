@@ -58,7 +58,6 @@
 		1D72215A1BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221591BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1DCFE4A41BBA14220022ACD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220931BB6086100FE1B91 /* LaunchScreen.storyboard */; };
 		1DCFE4A61BBA153C0022ACD3 /* applovin_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCFE4A51BBA153C0022ACD3 /* applovin_logo.png */; settings = {ASSET_TAGS = (); }; };
-		1DCFE4A81BBA15B00022ACD3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFE4A71BBA15B00022ACD3 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,7 +128,6 @@
 		1D7221571BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDemoNativeAdProgrammaticViewController.swift; sourceTree = "<group>"; };
 		1D7221591BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDemoNativeAdFeedTableViewController.swift; sourceTree = "<group>"; };
 		1DCFE4A51BBA153C0022ACD3 /* applovin_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applovin_logo.png; sourceTree = "<group>"; };
-		1DCFE4A71BBA15B00022ACD3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +172,6 @@
 		1D7220891BB6086100FE1B91 /* iOS-SDK-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				1DCFE4A71BBA15B00022ACD3 /* README.md */,
 				1D72209E1BB6089C00FE1B91 /* AppLovin SDK Here */,
 				1D72209F1BB608A500FE1B91 /* Components */,
 				1D7220A11BB608BE00FE1B91 /* SDK Integration Examples */,
@@ -479,7 +476,6 @@
 			files = (
 				1D72210A1BB60C4F00FE1B91 /* ALCarouselCardView.m in Sources */,
 				1D72212C1BB60D5500FE1B91 /* ALDemoRootViewController.swift in Sources */,
-				1DCFE4A81BBA15B00022ACD3 /* README.md in Sources */,
 				1D7220DB1BB60C3000FE1B91 /* ALCarouselCardState.m in Sources */,
 				1D7220DC1BB60C3000FE1B91 /* ALCarouselViewModel.m in Sources */,
 				1D7220C91BB60ABF00FE1B91 /* ALDemoBaseViewController.swift in Sources */,
