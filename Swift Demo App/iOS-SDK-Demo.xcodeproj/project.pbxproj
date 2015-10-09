@@ -8,35 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		1D72208B1BB6086100FE1B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D72208A1BB6086100FE1B91 /* AppDelegate.swift */; };
-		1D7220A61BB6093F00FE1B91 /* nav_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220A41BB6093F00FE1B91 /* nav_logo@2x.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220A81BB609A300FE1B91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220A71BB609A300FE1B91 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		1D7220C71BB60A7E00FE1B91 /* ALDemoBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220C61BB60A7E00FE1B91 /* ALDemoBaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D7220C91BB60ABF00FE1B91 /* ALDemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220C81BB60ABF00FE1B91 /* ALDemoBaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D7220DA1BB60C3000FE1B91 /* ALNativeAdVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220D31BB60C3000FE1B91 /* ALNativeAdVideoPlayer.m */; settings = {ASSET_TAGS = (); }; };
-		1D7220DB1BB60C3000FE1B91 /* ALCarouselCardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220D51BB60C3000FE1B91 /* ALCarouselCardState.m */; settings = {ASSET_TAGS = (); }; };
-		1D7220DC1BB60C3000FE1B91 /* ALCarouselViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220D81BB60C3000FE1B91 /* ALCarouselViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		1D7220F01BB60C4A00FE1B91 /* Star_Sprite_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E01BB60C4A00FE1B91 /* Star_Sprite_0.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F11BB60C4A00FE1B91 /* Star_Sprite_0.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E11BB60C4A00FE1B91 /* Star_Sprite_0.5.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F21BB60C4A00FE1B91 /* Star_Sprite_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E21BB60C4A00FE1B91 /* Star_Sprite_1.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F31BB60C4A00FE1B91 /* Star_Sprite_1.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E31BB60C4A00FE1B91 /* Star_Sprite_1.5.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F41BB60C4A00FE1B91 /* Star_Sprite_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E41BB60C4A00FE1B91 /* Star_Sprite_2.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F51BB60C4A00FE1B91 /* Star_Sprite_2.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E51BB60C4A00FE1B91 /* Star_Sprite_2.5.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F61BB60C4A00FE1B91 /* Star_Sprite_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E61BB60C4A00FE1B91 /* Star_Sprite_3.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F71BB60C4A00FE1B91 /* Star_Sprite_3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E71BB60C4A00FE1B91 /* Star_Sprite_3.5.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F81BB60C4A00FE1B91 /* Star_Sprite_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E81BB60C4A00FE1B91 /* Star_Sprite_4.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220F91BB60C4A00FE1B91 /* Star_Sprite_4.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E91BB60C4A00FE1B91 /* Star_Sprite_4.5.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220FA1BB60C4A00FE1B91 /* Star_Sprite_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EA1BB60C4A00FE1B91 /* Star_Sprite_5.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220FB1BB60C4A00FE1B91 /* applovin_card_learn_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EB1BB60C4A00FE1B91 /* applovin_card_learn_more.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220FC1BB60C4A00FE1B91 /* applovin_card_muted.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EC1BB60C4A00FE1B91 /* applovin_card_muted.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220FD1BB60C4A00FE1B91 /* applovin_card_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220ED1BB60C4A00FE1B91 /* applovin_card_play.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220FE1BB60C4A00FE1B91 /* applovin_card_replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EE1BB60C4A00FE1B91 /* applovin_card_replay.png */; settings = {ASSET_TAGS = (); }; };
-		1D7220FF1BB60C4A00FE1B91 /* applovin_card_unmuted.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EF1BB60C4A00FE1B91 /* applovin_card_unmuted.png */; settings = {ASSET_TAGS = (); }; };
-		1D72210A1BB60C4F00FE1B91 /* ALCarouselCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221011BB60C4F00FE1B91 /* ALCarouselCardView.m */; settings = {ASSET_TAGS = (); }; };
-		1D72210B1BB60C4F00FE1B91 /* ALCarouselMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221031BB60C4F00FE1B91 /* ALCarouselMediaView.m */; settings = {ASSET_TAGS = (); }; };
-		1D72210C1BB60C4F00FE1B91 /* ALCarouselReplayOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221051BB60C4F00FE1B91 /* ALCarouselReplayOverlayView.m */; settings = {ASSET_TAGS = (); }; };
-		1D72210D1BB60C4F00FE1B91 /* ALCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221071BB60C4F00FE1B91 /* ALCarouselView.m */; settings = {ASSET_TAGS = (); }; };
-		1D72210E1BB60C4F00FE1B91 /* ALNativeAdVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221091BB60C4F00FE1B91 /* ALNativeAdVideoView.m */; settings = {ASSET_TAGS = (); }; };
-		1D7221121BB60C5700FE1B91 /* UIView+ALActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221101BB60C5700FE1B91 /* UIView+ALActivityIndicator.m */; settings = {ASSET_TAGS = (); }; };
+		1D7220A61BB6093F00FE1B91 /* nav_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220A41BB6093F00FE1B91 /* nav_logo@2x.png */; };
+		1D7220A81BB609A300FE1B91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220A71BB609A300FE1B91 /* Images.xcassets */; };
+		1D7220C71BB60A7E00FE1B91 /* ALDemoBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220C61BB60A7E00FE1B91 /* ALDemoBaseTableViewController.swift */; };
+		1D7220C91BB60ABF00FE1B91 /* ALDemoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220C81BB60ABF00FE1B91 /* ALDemoBaseViewController.swift */; };
+		1D7220DA1BB60C3000FE1B91 /* ALNativeAdVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220D31BB60C3000FE1B91 /* ALNativeAdVideoPlayer.m */; };
+		1D7220DB1BB60C3000FE1B91 /* ALCarouselCardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220D51BB60C3000FE1B91 /* ALCarouselCardState.m */; };
+		1D7220DC1BB60C3000FE1B91 /* ALCarouselViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7220D81BB60C3000FE1B91 /* ALCarouselViewModel.m */; };
+		1D7220F01BB60C4A00FE1B91 /* Star_Sprite_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E01BB60C4A00FE1B91 /* Star_Sprite_0.png */; };
+		1D7220F11BB60C4A00FE1B91 /* Star_Sprite_0.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E11BB60C4A00FE1B91 /* Star_Sprite_0.5.png */; };
+		1D7220F21BB60C4A00FE1B91 /* Star_Sprite_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E21BB60C4A00FE1B91 /* Star_Sprite_1.png */; };
+		1D7220F31BB60C4A00FE1B91 /* Star_Sprite_1.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E31BB60C4A00FE1B91 /* Star_Sprite_1.5.png */; };
+		1D7220F41BB60C4A00FE1B91 /* Star_Sprite_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E41BB60C4A00FE1B91 /* Star_Sprite_2.png */; };
+		1D7220F51BB60C4A00FE1B91 /* Star_Sprite_2.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E51BB60C4A00FE1B91 /* Star_Sprite_2.5.png */; };
+		1D7220F61BB60C4A00FE1B91 /* Star_Sprite_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E61BB60C4A00FE1B91 /* Star_Sprite_3.png */; };
+		1D7220F71BB60C4A00FE1B91 /* Star_Sprite_3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E71BB60C4A00FE1B91 /* Star_Sprite_3.5.png */; };
+		1D7220F81BB60C4A00FE1B91 /* Star_Sprite_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E81BB60C4A00FE1B91 /* Star_Sprite_4.png */; };
+		1D7220F91BB60C4A00FE1B91 /* Star_Sprite_4.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220E91BB60C4A00FE1B91 /* Star_Sprite_4.5.png */; };
+		1D7220FA1BB60C4A00FE1B91 /* Star_Sprite_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EA1BB60C4A00FE1B91 /* Star_Sprite_5.png */; };
+		1D7220FB1BB60C4A00FE1B91 /* applovin_card_learn_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EB1BB60C4A00FE1B91 /* applovin_card_learn_more.png */; };
+		1D7220FC1BB60C4A00FE1B91 /* applovin_card_muted.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EC1BB60C4A00FE1B91 /* applovin_card_muted.png */; };
+		1D7220FD1BB60C4A00FE1B91 /* applovin_card_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220ED1BB60C4A00FE1B91 /* applovin_card_play.png */; };
+		1D7220FE1BB60C4A00FE1B91 /* applovin_card_replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EE1BB60C4A00FE1B91 /* applovin_card_replay.png */; };
+		1D7220FF1BB60C4A00FE1B91 /* applovin_card_unmuted.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220EF1BB60C4A00FE1B91 /* applovin_card_unmuted.png */; };
+		1D72210A1BB60C4F00FE1B91 /* ALCarouselCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221011BB60C4F00FE1B91 /* ALCarouselCardView.m */; };
+		1D72210B1BB60C4F00FE1B91 /* ALCarouselMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221031BB60C4F00FE1B91 /* ALCarouselMediaView.m */; };
+		1D72210C1BB60C4F00FE1B91 /* ALCarouselReplayOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221051BB60C4F00FE1B91 /* ALCarouselReplayOverlayView.m */; };
+		1D72210D1BB60C4F00FE1B91 /* ALCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221071BB60C4F00FE1B91 /* ALCarouselView.m */; };
+		1D72210E1BB60C4F00FE1B91 /* ALNativeAdVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221091BB60C4F00FE1B91 /* ALNativeAdVideoView.m */; };
+		1D7221121BB60C5700FE1B91 /* UIView+ALActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221101BB60C5700FE1B91 /* UIView+ALActivityIndicator.m */; };
 		1D72211F1BB60CB500FE1B91 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7221141BB60CB500FE1B91 /* AdSupport.framework */; };
 		1D7221201BB60CB500FE1B91 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7221151BB60CB500FE1B91 /* AVFoundation.framework */; };
 		1D7221211BB60CB500FE1B91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7221161BB60CB500FE1B91 /* CoreGraphics.framework */; };
@@ -48,16 +48,16 @@
 		1D7221271BB60CB500FE1B91 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D72211C1BB60CB500FE1B91 /* StoreKit.framework */; };
 		1D7221281BB60CB500FE1B91 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D72211D1BB60CB500FE1B91 /* SystemConfiguration.framework */; };
 		1D7221291BB60CB500FE1B91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D72211E1BB60CB500FE1B91 /* UIKit.framework */; };
-		1D72212C1BB60D5500FE1B91 /* ALDemoRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D72212B1BB60D5500FE1B91 /* ALDemoRootViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D72212E1BB613E300FE1B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D72212D1BB613E300FE1B91 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		1D7221311BB6176000FE1B91 /* ALDemoInterstitialSingleInstanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221301BB6176000FE1B91 /* ALDemoInterstitialSingleInstanceViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D7221341BB6198700FE1B91 /* ALDemoInterstitialSharerdInstanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221331BB6198700FE1B91 /* ALDemoInterstitialSharerdInstanceViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D7221371BB619F600FE1B91 /* ALDemoInterstitialManualLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221361BB619F600FE1B91 /* ALDemoInterstitialManualLoadingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D7221391BB61B0100FE1B91 /* ALDemoRewardedVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221381BB61B0100FE1B91 /* ALDemoRewardedVideosViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D7221581BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221571BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1D72215A1BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221591BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1D72212C1BB60D5500FE1B91 /* ALDemoRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D72212B1BB60D5500FE1B91 /* ALDemoRootViewController.swift */; };
+		1D72212E1BB613E300FE1B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D72212D1BB613E300FE1B91 /* Main.storyboard */; };
+		1D7221311BB6176000FE1B91 /* ALDemoInterstitialSingleInstanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221301BB6176000FE1B91 /* ALDemoInterstitialSingleInstanceViewController.swift */; };
+		1D7221341BB6198700FE1B91 /* ALDemoInterstitialSharerdInstanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221331BB6198700FE1B91 /* ALDemoInterstitialSharerdInstanceViewController.swift */; };
+		1D7221371BB619F600FE1B91 /* ALDemoInterstitialManualLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221361BB619F600FE1B91 /* ALDemoInterstitialManualLoadingViewController.swift */; };
+		1D7221391BB61B0100FE1B91 /* ALDemoRewardedVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221381BB61B0100FE1B91 /* ALDemoRewardedVideosViewController.swift */; };
+		1D7221581BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221571BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift */; };
+		1D72215A1BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221591BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift */; };
 		1DCFE4A41BBA14220022ACD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220931BB6086100FE1B91 /* LaunchScreen.storyboard */; };
-		1DCFE4A61BBA153C0022ACD3 /* applovin_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCFE4A51BBA153C0022ACD3 /* applovin_logo.png */; settings = {ASSET_TAGS = (); }; };
+		1DCFE4A61BBA153C0022ACD3 /* applovin_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCFE4A51BBA153C0022ACD3 /* applovin_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -600,7 +600,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iOS-SDK-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -625,7 +625,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iOS-SDK-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
