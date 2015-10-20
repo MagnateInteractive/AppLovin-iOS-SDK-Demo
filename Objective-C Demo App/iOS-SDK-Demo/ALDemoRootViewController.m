@@ -57,7 +57,10 @@ static NSString *const kSupportLink = @"https://support.applovin.com/support/hom
         SFSafariViewController *safariController = [[SFSafariViewController alloc] initWithURL: [NSURL URLWithString: kSupportLink]
                                                                        entersReaderIfAvailable:YES];
         [self presentViewController: safariController animated: YES completion:^{
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
             [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleDefault];
+#pragma GCC diagnostic pop
         }];
     }
     else
@@ -77,7 +80,10 @@ static NSString *const kSupportLink = @"https://support.applovin.com/support/hom
         [mailController setMessageBody: [NSString stringWithFormat: @"\n\n---\nSDK Version: %@", [ALSdk version]] isHTML: NO];
         mailController.navigationBar.tintColor = [UIColor whiteColor];
         [self presentViewController: mailController animated: YES completion:^{
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
             [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleLightContent];
+#pragma GCC diagnostic pop
         }];
     }
     else
@@ -87,7 +93,7 @@ static NSString *const kSupportLink = @"https://support.applovin.com/support/hom
                                     message: message
                                    delegate: nil
                           cancelButtonTitle: @"OK"
-                          otherButtonTitles: nil, nil] show];
+                          otherButtonTitles: nil] show];
     }
 }
 
@@ -100,7 +106,7 @@ static NSString *const kSupportLink = @"https://support.applovin.com/support/hom
                                         message: @"Thank you for your email, we will process it as soon as possible."
                                        delegate: nil
                               cancelButtonTitle: @"OK"
-                              otherButtonTitles: nil, nil] show];
+                              otherButtonTitles: nil] show];
         case MFMailComposeResultCancelled:
         case MFMailComposeResultSaved:
         case MFMailComposeResultFailed:

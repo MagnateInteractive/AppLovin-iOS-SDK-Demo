@@ -172,7 +172,7 @@
 		1D7220891BB6086100FE1B91 /* iOS-SDK-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				1D72209E1BB6089C00FE1B91 /* AppLovin SDK Here */,
+				1D72209E1BB6089C00FE1B91 /* PUT SDK HERE */,
 				1D72209F1BB608A500FE1B91 /* Components */,
 				1D7220A11BB608BE00FE1B91 /* SDK Integration Examples */,
 				1D7220A21BB608C600FE1B91 /* Supporting Files */,
@@ -180,11 +180,11 @@
 			path = "iOS-SDK-Demo";
 			sourceTree = "<group>";
 		};
-		1D72209E1BB6089C00FE1B91 /* AppLovin SDK Here */ = {
+		1D72209E1BB6089C00FE1B91 /* PUT SDK HERE */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "AppLovin SDK Here";
+			name = "PUT SDK HERE";
 			sourceTree = "<group>";
 		};
 		1D72209F1BB608A500FE1B91 /* Components */ = {
@@ -600,7 +600,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iOS-SDK-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -625,7 +625,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iOS-SDK-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

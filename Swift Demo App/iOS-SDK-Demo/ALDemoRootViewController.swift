@@ -48,19 +48,12 @@ class ALDemoRootViewController: UITableViewController, MFMailComposeViewControll
     
     func openSupportSite()
     {
-        if #available(iOS 9.0, *)
-        {
-            let safariController = SFSafariViewController(URL: NSURL(string: kSupportLink)!, entersReaderIfAvailable: true)
-            self.presentViewController(safariController, animated: true, completion: {
-                UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: false)
-            })
-        }
-        else
-        {
-            UIApplication.sharedApplication().openURL(NSURL(string: kSupportLink)!)
-        }
+        let safariController = SFSafariViewController(URL: NSURL(string: kSupportLink)!, entersReaderIfAvailable: true)
+        self.presentViewController(safariController, animated: true, completion: {
+            UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: false)
+        })
     }
-        
+    
     func attemptSendEmail()
     {
         if MFMailComposeViewController.canSendMail()
