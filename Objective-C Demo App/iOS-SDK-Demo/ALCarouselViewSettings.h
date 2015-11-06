@@ -19,8 +19,8 @@
 #define kCarouselBackgroundColor              [UIColor whiteColor]
 #define kCardBackgroundColor                  [UIColor whiteColor]
 #define kCardButtonColor                      [UIColor colorWithWhite: 0.84f alpha: 1.0f]
-#define kVideoViewBackgroundColor             [UIColor blackColor]
-#define kVideoViewBackgroundWhilePlayingColor [UIColor blackColor]
+#define kVideoViewBackgroundColor             [UIColor clearColor]
+#define kVideoViewBackgroundWhilePlayingColor [UIColor clearColor]
 #define kReplayOverlayBackgroundColor         [UIColor blackColor]
 #define kButtonHighlightTint                  [UIColor colorWithWhite: 0.87f alpha: 1.0f]
 
