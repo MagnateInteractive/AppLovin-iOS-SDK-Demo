@@ -113,29 +113,29 @@
 
 #pragma mark - Ad Display Delegate
 
-- (void)ad:(alnonnull ALAd *)ad wasDisplayedIn:(alnonnull UIView *)view
+- (void)ad:(nonnull ALAd *)ad wasDisplayedIn:(nonnull UIView *)view
 {
     [self log: @"Ad Displayed"];
 }
 
-- (void)ad:(alnonnull ALAd *)ad wasHiddenIn:(alnonnull UIView *)view
+- (void)ad:(nonnull ALAd *)ad wasHiddenIn:(nonnull UIView *)view
 {
     [self log: @"Ad Dismissed"];
 }
 
-- (void)ad:(alnonnull ALAd *)ad wasClickedIn:(alnonnull UIView *)view
+- (void)ad:(nonnull ALAd *)ad wasClickedIn:(nonnull UIView *)view
 {
     [self log: @"Ad Clicked"];
 }
 
 #pragma mark - Ad Video Playback Delegate
 
-- (void)videoPlaybackBeganInAd:(alnonnull ALAd *)ad
+- (void)videoPlaybackBeganInAd:(nonnull ALAd *)ad
 {
     [self log: @"Video Started"];
 }
 
-- (void)videoPlaybackEndedInAd:(alnonnull ALAd *)ad atPlaybackPercent:(alnonnull NSNumber *)percentPlayed fullyWatched:(BOOL)wasFullyWatched
+- (void)videoPlaybackEndedInAd:(nonnull ALAd *)ad atPlaybackPercent:(nonnull NSNumber *)percentPlayed fullyWatched:(BOOL)wasFullyWatched
 {
     [self log: @"Video Ended"];
 }

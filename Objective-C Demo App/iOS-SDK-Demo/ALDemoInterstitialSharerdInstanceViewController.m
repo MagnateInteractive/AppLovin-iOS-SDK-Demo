@@ -38,12 +38,12 @@
 
 #pragma mark - Ad Load Delegate
 
-- (void)adService:(alnonnull ALAdService *)adService didLoadAd:(alnonnull ALAd *)ad
+- (void)adService:(nonnull ALAdService *)adService didLoadAd:(nonnull ALAd *)ad
 {
     [self log: @"Interstitial Loaded"];
 }
 
-- (void) adService:(alnonnull ALAdService *)adService didFailToLoadAdWithError:(int)code
+- (void) adService:(nonnull ALAdService *)adService didFailToLoadAdWithError:(int)code
 {
     // Look at ALErrorCodes.h for list of error codes
     [self log: [NSString stringWithFormat: @"Interstitial failed to load with error code = %d", code]];
@@ -51,29 +51,29 @@
 
 #pragma mark - Ad Display Delegate
 
-- (void)ad:(alnonnull ALAd *)ad wasDisplayedIn:(alnonnull UIView *)view
+- (void)ad:(nonnull ALAd *)ad wasDisplayedIn:(nonnull UIView *)view
 {
     [self log: @"Interstitial Displayed"];
 }
 
-- (void)ad:(alnonnull ALAd *)ad wasHiddenIn:(alnonnull UIView *)view
+- (void)ad:(nonnull ALAd *)ad wasHiddenIn:(nonnull UIView *)view
 {
     [self log: @"Interstitial Dismissed"];
 }
 
-- (void)ad:(alnonnull ALAd *)ad wasClickedIn:(alnonnull UIView *)view
+- (void)ad:(nonnull ALAd *)ad wasClickedIn:(nonnull UIView *)view
 {
     [self log: @"Interstitial Clicked"];
 }
 
 #pragma mark - Ad Video Playback Delegate
 
-- (void)videoPlaybackBeganInAd:(alnonnull ALAd *)ad
+- (void)videoPlaybackBeganInAd:(nonnull ALAd *)ad
 {
     [self log: @"Video Started"];
 }
 
-- (void)videoPlaybackEndedInAd:(alnonnull ALAd *)ad atPlaybackPercent:(alnonnull NSNumber *)percentPlayed fullyWatched:(BOOL)wasFullyWatched
+- (void)videoPlaybackEndedInAd:(nonnull ALAd *)ad atPlaybackPercent:(nonnull NSNumber *)percentPlayed fullyWatched:(BOOL)wasFullyWatched
 {
     [self log: @"Video Ended"];
 }
