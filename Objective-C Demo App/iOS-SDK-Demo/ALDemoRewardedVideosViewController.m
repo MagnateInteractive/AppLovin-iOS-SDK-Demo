@@ -88,12 +88,15 @@
         // after a reward was initially granted (since reward validation happens as soon as a
         // video is launched).
     }
-    
-    if (responseCode == kALErrorCodeIncentivizedValidationNetworkTimeout || responseCode == kALErrorCodeIncentivizedUnknownServerError)
+    else if (responseCode == kALErrorCodeIncentivizedValidationNetworkTimeout || responseCode == kALErrorCodeIncentivizedUnknownServerError)
     {
         // Some server issue happened here. Don't grant a reward. By default we'll show the user
         // a UIAlertView telling them to try again later, but you can change this in the
         // Manage Apps UI.
+    }
+    else if (responseCode == kALErrorCodeIncentiviziedAdNotPreloaded)
+    {
+        // Indicates that the developer called for a rewarded video before one was available.
     }
 }
 
