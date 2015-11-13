@@ -85,12 +85,15 @@ class ALDemoRewardedVideosViewController: ALDemoBaseViewController, ALAdLoadDele
             // after a reward was initially granted (since reward validation happens as soon as a
             // video is launched).
         }
-        
-        if responseCode == Int(kALErrorCodeIncentivizedValidationNetworkTimeout) || responseCode == Int(kALErrorCodeIncentivizedUnknownServerError)
+        else if responseCode == Int(kALErrorCodeIncentivizedValidationNetworkTimeout) || responseCode == Int(kALErrorCodeIncentivizedUnknownServerError)
         {
             // Some server issue happened here. Don't grant a reward. By default we'll show the user
             // a UIAlertView telling them to try again later, but you can change this in the
             // Manage Apps UI.
+        }
+        else if responseCode == Int(kALErrorCodeIncentiviziedAdNotPreloaded)
+        {
+            // Indicates that you called for a rewarded video before one was available.
         }
     }
     

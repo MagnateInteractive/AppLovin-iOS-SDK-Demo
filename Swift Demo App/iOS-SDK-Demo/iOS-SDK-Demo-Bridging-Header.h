@@ -6,3 +6,6 @@
 #import "ALInterstitialAd.h"
 #import "ALIncentivizedInterstitialAd.h"
 #import "ALCarouselMediaView.h"
+
+#import "ALDemoRSSFeedRetriever.h"
+#import "ALDemoArticle.h"

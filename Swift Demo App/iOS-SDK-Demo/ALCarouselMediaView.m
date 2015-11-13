@@ -71,6 +71,7 @@ static NSString * const TAG = @"ALCarouselMediaView";
     
     self.adImageView = [[UIImageView alloc] init];
     self.adImageView.userInteractionEnabled = NO;
+    self.adImageView.backgroundColor = [UIColor clearColor];
     
     UITapGestureRecognizer *adImageTapGesture = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(didTapAdImage:)];
     [self.adImageView addGestureRecognizer: adImageTapGesture];
@@ -276,19 +277,19 @@ static NSString * const TAG = @"ALCarouselMediaView";
         
         self.videoView.playerLayer.backgroundColor = kVideoViewBackgroundWhilePlayingColor.CGColor;
         self.videoView.backgroundColor = kVideoViewBackgroundWhilePlayingColor;
-        
+
         // Prepare the view to play video
-        [UIView animateWithDuration: 0.5f animations:^{
+        [UIView animateWithDuration: 1.0f animations:^{
             
             self.muteButton.alpha  = 1.0f;
             self.playButton.alpha  = 0.0f;
             
             // Crossfade the video in and the ad image out then autoplay the video if needed
             self.adImageView.alpha = 0.0f;
+            self.videoView.alpha   = 1.0f;
         }];
         
         self.adImageView.userInteractionEnabled = NO;
-        self.videoView.alpha   = 1.0f;
         
         // When replaying a video we do not fade out the replay overlay
         self.replayOverlayView.alpha        = 0.0f;
@@ -387,6 +388,9 @@ static NSString * const TAG = @"ALCarouselMediaView";
         if ( [self isCurrentlyPlayingVideo] )
         {
             [self setInactive];
+            [UIView animateWithDuration: 0.5f animations:^{
+                self.playButton.alpha = 1.0f;
+            }];
         }
         else
         {
@@ -581,11 +585,8 @@ static NSString * const TAG = @"ALCarouselMediaView";
         self.playButton.alpha = 0.0f;
         [self.playButton addTarget: self action: @selector(didTapPlayButton:) forControlEvents: UIControlEventTouchUpInside];
         
-        if ( kVideoClicksThrough )
-        {
-            UITapGestureRecognizer *videoTapGesture = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(didTapVideo:)];
-            [self.videoView addGestureRecognizer: videoTapGesture];
-        }
+        UITapGestureRecognizer *videoTapGesture = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(didTapVideo:)];
+        [self.videoView addGestureRecognizer: videoTapGesture];
         
         [self insertSubview: self.videoView  belowSubview: self.adImageView];
         [self insertSubview: self.playButton aboveSubview: self.adImageView];
