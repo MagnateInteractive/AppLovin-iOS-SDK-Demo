@@ -11,7 +11,6 @@
 #import "ALCarouselMediaView.h"
 #import "ALCarouselViewModel.h"
 #import "ALCarouselRenderingProtocol.h"
-#import "ALNullabilityAnnotations.h"
 
 @class ALCarouselView;
 
@@ -23,19 +22,19 @@
 /**
  *  The view containing the ad video or image.
  */
-@property (strong, nonatomic) ALCarouselMediaView* __alnonnull  mediaView;
+@property (strong, nonatomic) ALCarouselMediaView* __nonnull  mediaView;
 
 /**
  *  Initializes a newly allocated card view object with the specified sdk
  */
-- (alnonnull instancetype) initWithSdk:(alnonnull ALSdk *)sdk;
+- (nonnull instancetype) initWithSdk:(nonnull ALSdk *)sdk;
 
 /**
  *  Redirects to the CTA for the given ad.
  *
  *  @param ad The ad with the CTA URL to redirect to.
  */
-- (void)handleClickForAd:(alnonnull ALNativeAd *)ad;
+- (void)handleClickForAd:(nonnull ALNativeAd *)ad;
 
 /**
  Call this method when your view is displayed to the user.
@@ -43,10 +42,10 @@
  */
 - (void)trackImpression;
 
-@property (strong, nonatomic)  UIActivityIndicatorView* __alnullable  activityIndicator;
-@property (strong, nonatomic)  UIView*                  __alnullable  activityIndicatorOverlay;
+@property (strong, nonatomic)  UIActivityIndicatorView* __nullable  activityIndicator;
+@property (strong, nonatomic)  UIView*                  __nullable  activityIndicatorOverlay;
 
--(alnonnull id) init                        __attribute__((unavailable("Use initWithSdk:parentView:")));
--(alnonnull id) initWithFrame:(CGRect)frame __attribute__((unavailable("Use initWithSdk:parentView:")));
+-(nonnull id) init                        __attribute__((unavailable("Use initWithSdk:parentView:")));
+-(nonnull id) initWithFrame:(CGRect)frame __attribute__((unavailable("Use initWithSdk:parentView:")));
 
 @end

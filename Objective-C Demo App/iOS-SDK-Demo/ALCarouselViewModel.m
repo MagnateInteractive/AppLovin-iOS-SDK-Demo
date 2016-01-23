@@ -25,7 +25,7 @@
 static void* ALCarouselViewModelKVOContext = &ALCarouselViewModelKVOContext;
 static NSString* kKeypathMuteState = @"muteState";
 
--(alnonnull instancetype) initWithNativeAds: (alnonnull NSArray *)ads
+-(nonnull instancetype) initWithNativeAds: (nonnull NSArray *)ads
 {
     self = [super init];
     if ( self )

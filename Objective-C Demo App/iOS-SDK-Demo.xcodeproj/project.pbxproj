@@ -464,6 +464,11 @@
 				CLASSPREFIX = ALDemo;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = AppLovin;
+				TargetAttributes = {
+					2713D00918EDDD0C006218B2 = {
+						DevelopmentTeam = X8JXXK4FF5;
+					};
+				};
 			};
 			buildConfigurationList = 2713D00518EDDD0C006218B2 /* Build configuration list for PBXProject "iOS-SDK-Demo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -647,7 +652,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Prefix.pch";
 				INFOPLIST_FILE = "iOS-SDK-Demo/iOS-SDK-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-SDK-Demo",
@@ -658,6 +663,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -670,7 +676,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Prefix.pch";
 				INFOPLIST_FILE = "iOS-SDK-Demo/iOS-SDK-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS-SDK-Demo",
@@ -681,6 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ALNullabilityAnnotations.h"
 
 @class ALNativeAd;
 @class ALCarouselCardState;
@@ -16,13 +15,13 @@
 
 @interface ALCarouselViewModel : NSObject
 
-@property (strong, nonatomic, readonly) NSArray* __alnullable nativeAds;
+@property (strong, nonatomic, readonly) NSArray* __nullable nativeAds;
 @property (assign, nonatomic, readonly) NSUInteger nativeAdsCount;
 
--(alnonnull instancetype) initWithNativeAds: (alnonnull NSArray *)ads;
--(alnullable ALCarouselCardState*) cardStateForNativeAd: (alnonnull ALNativeAd*) ad;
--(alnullable ALCarouselCardState*) cardStateAtNativeAdIndex: (NSUInteger) index;
--(alnullable ALNativeAd*) nativeAdAtIndex: (NSUInteger) index;
+-(nonnull instancetype) initWithNativeAds: (nonnull NSArray *)ads;
+-(nullable ALCarouselCardState*) cardStateForNativeAd: (nonnull ALNativeAd*) ad;
+-(nullable ALCarouselCardState*) cardStateAtNativeAdIndex: (NSUInteger) index;
+-(nullable ALNativeAd*) nativeAdAtIndex: (NSUInteger) index;
 
 -(void) removeAllObjects;
 

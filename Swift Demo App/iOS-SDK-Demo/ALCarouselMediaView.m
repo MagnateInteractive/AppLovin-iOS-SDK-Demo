@@ -53,7 +53,7 @@ static NSString * const TAG = @"ALCarouselMediaView";
     return self;
 }
 
-- (alnonnull instancetype) initWithSdk:(alnonnull ALSdk *)sdk parentView: (alnonnull ALCarouselCardView*) parentView;
+- (nonnull instancetype) initWithSdk:(nonnull ALSdk *)sdk parentView: (nonnull ALCarouselCardView*) parentView;
 {
     self = [super init];
     if ( self )
@@ -153,7 +153,7 @@ static NSString * const TAG = @"ALCarouselMediaView";
 }
 
 // Entry points
-- (void)renderViewForNativeAd:(alnonnull ALNativeAd *)ad
+- (void)renderViewForNativeAd:(nonnull ALNativeAd *)ad
 {
     ALCarouselCardState *cardState = [ALCarouselCardState cardStateForSingleCard];
     [self renderViewForNativeAd: ad cardState: cardState];

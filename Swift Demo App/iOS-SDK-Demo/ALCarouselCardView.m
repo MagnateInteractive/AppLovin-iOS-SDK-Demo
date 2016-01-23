@@ -39,7 +39,7 @@ static NSString * const TAG = @"ALCarouselCardView";
 
 #pragma mark - Initialization
 
-- (alnonnull instancetype) initWithSdk:(nonnull ALSdk *)sdk
+- (nonnull instancetype) initWithSdk:(nonnull ALSdk *)sdk
 {
     self = [super init];
     if ( self )
@@ -299,7 +299,7 @@ static NSString * const TAG = @"ALCarouselCardView";
 
 #pragma mark - Utility
 
-- (void)handleClickForAd:(alnonnull ALNativeAd *)ad
+- (void)handleClickForAd:(nonnull ALNativeAd *)ad
 {
     if ( ad )
     {
@@ -331,7 +331,7 @@ static NSString * const TAG = @"ALCarouselCardView";
     }
 }
 
-- (void)populateStarRating: (alnonnull ALNativeAd*) ad
+- (void)populateStarRating: (nonnull ALNativeAd*) ad
 {
     NSString* filename = [NSString stringWithFormat: @"Star_Sprite_%@", ad.starRating.stringValue];
     UIImage* starRating = [UIImage imageNamed: filename];

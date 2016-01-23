@@ -22,14 +22,14 @@
 /**
  *  Initializes a newly allocated media view object with the specified sdk and parent card view.
  */
-- (alnonnull instancetype) initWithSdk:(alnonnull ALSdk *)sdk parentView: (alnonnull ALCarouselCardView*) parentView;
+- (nonnull instancetype) initWithSdk:(nonnull ALSdk *)sdk parentView: (nonnull ALCarouselCardView*) parentView;
 
 /**
  *  Saves the current video's states and clears it. This is for when moving a slot out of the middle card.
  */
 - (void)setInactive;
 
--(alnonnull id) init                        __attribute__((unavailable("Use initWithSdk:parentView:")));
--(alnonnull id) initWithFrame:(CGRect)frame __attribute__((unavailable("Use initWithSdk:parentView:")));
+-(nonnull id) init                        __attribute__((unavailable("Use initWithSdk:parentView:")));
+-(nonnull id) initWithFrame:(CGRect)frame __attribute__((unavailable("Use initWithSdk:parentView:")));
 
 @end

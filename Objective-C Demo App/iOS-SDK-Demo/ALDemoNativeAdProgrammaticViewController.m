@@ -104,7 +104,7 @@
     });
 }
 
-- (void)postbackService:(nonnull ALPostbackService *)postbackService didFailToExecutePostback:(alnullable NSURL *)postbackURL errorCode:(NSInteger)errorCode
+- (void)postbackService:(nonnull ALPostbackService *)postbackService didFailToExecutePostback:(nullable NSURL *)postbackURL errorCode:(NSInteger)errorCode
 {
     // Callbacks may not happen on main queue
     dispatch_async(dispatch_get_main_queue(), ^{

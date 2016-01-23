@@ -18,29 +18,29 @@
 /**
  *  An object conforming to the ALNativeAdGroupLoadDelegate protocol, which, if set, will be notified of ad load events.
  */
-@property (weak, nonatomic) id<ALNativeAdLoadDelegate> __alnullable loadDelegate;
+@property (weak, nonatomic) id<ALNativeAdLoadDelegate> __nullable loadDelegate;
 
 /**
  *  The current native ad(s) being displayed.
  */
-@property (strong, nonatomic, readonly) NSArray* __alnullable nativeAds;
+@property (strong, nonatomic, readonly) NSArray* __nullable nativeAds;
 
 /**
  *  Initializes a newly allocated carousel view object with the specified frame rectangle.
  */
--(alnonnull instancetype) initWithFrame: (CGRect) frame;
+-(nonnull instancetype) initWithFrame: (CGRect) frame;
 
 /**
  *  Initializes a newly allocated carousel view object with the specified frame rectangle and sdk.
  */
--(alnonnull instancetype) initWithFrame: (CGRect) frame sdk: (alnonnull ALSdk *)sdk;
+-(nonnull instancetype) initWithFrame: (CGRect) frame sdk: (nonnull ALSdk *)sdk;
 
 /**
  *  Initializes a newly allocated carousel view object with the specified frame rectangle, sdk, and native ad(s) to display.
  */
--(alnonnull instancetype) initWithFrame: (CGRect) frame sdk: (alnonnull ALSdk *)sdk nativeAds: (alnullable NSArray*) nativeAds;
+-(nonnull instancetype) initWithFrame: (CGRect) frame sdk: (nonnull ALSdk *)sdk nativeAds: (nullable NSArray*) nativeAds;
 
 
--(alnonnull id) init __attribute__((unavailable("Use initWithFrame: or initWithFrame:sdk: or initWithFrame:sdk:nativeAds:")));
+-(nonnull id) init __attribute__((unavailable("Use initWithFrame: or initWithFrame:sdk: or initWithFrame:sdk:nativeAds:")));
 
 @end
