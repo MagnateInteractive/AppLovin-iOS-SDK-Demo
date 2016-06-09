@@ -27,6 +27,14 @@
     [ALInterstitialAd shared].adDisplayDelegate = self;
     [ALInterstitialAd shared].adVideoPlaybackDelegate = self;
     
+    /*
+     NOTE: We recommend the use of placements (AFTER creating them in your dashboard):
+     
+     [[ALInterstitialAd shared] showOver: [UIApplication sharedApplication].keyWindow placement: @"MANUAL_LOADING_SCREEN" andRender: self.ad];
+     
+     To learn more about placements, check out https://applovin.com/integration#iosPlacementsIntegration
+     */
+    
     [[ALInterstitialAd shared] showOver: [UIApplication sharedApplication].keyWindow andRender: self.ad];
     
     [self log: @"Interstitial Shown"];

@@ -29,6 +29,14 @@
         [ALIncentivizedInterstitialAd shared].adDisplayDelegate = self;
         [ALIncentivizedInterstitialAd shared].adVideoPlaybackDelegate = self;
         
+        /*
+         NOTE: We recommend the use of placements (AFTER creating them in your dashboard):
+         
+         [ALIncentivizedInterstitialAd showOverPlacement: @"REWARDED_VIDEO_DEMO_SCREEN" andNotify: self];
+         
+         To learn more about placements, check out https://applovin.com/integration#iosPlacementsIntegration
+         */
+        
         [ALIncentivizedInterstitialAd showAndNotify: self];
     }
     else
