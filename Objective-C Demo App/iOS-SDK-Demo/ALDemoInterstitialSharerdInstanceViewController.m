@@ -25,7 +25,15 @@
         [ALInterstitialAd shared].adDisplayDelegate = self;
         [ALInterstitialAd shared].adVideoPlaybackDelegate = self; // This will only ever be used if you have video ads enabled.
         
+        /*
+         NOTE: We recommend the use of placements (AFTER creating them in your dashboard):
+         
+         [[ALInterstitialAd shared] showOverPlacement: @"SHARED_INSTANCE_SCREEN"];
+         
+         To learn more about placements, check out https://applovin.com/integration#iosPlacementsIntegration
+         */
         [[ALInterstitialAd shared] show];
+        
         [self log: @"Interstitial Shown"];
     }
     else

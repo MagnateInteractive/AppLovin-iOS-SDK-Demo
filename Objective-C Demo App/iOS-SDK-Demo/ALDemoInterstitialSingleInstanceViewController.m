@@ -29,7 +29,16 @@
         self.interstitial.adDisplayDelegate = self;
         self.interstitial.adVideoPlaybackDelegate = self; // This will only ever be used if you have video ads enabled.
         
+        /*
+         NOTE: We recommend the use of placements (AFTER creating them in your dashboard):
+         
+         [self.interstitial showOverPlacement: @"SINGLE_INSTANCE_SCREEN"];
+         
+         To learn more about placements, check out https://applovin.com/integration#iosPlacementsIntegration
+         */
+        
         [self.interstitial show];
+        
         [self log: @"Interstitial Shown"];
     }
     else
