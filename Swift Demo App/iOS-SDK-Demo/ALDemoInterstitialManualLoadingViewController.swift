@@ -28,6 +28,14 @@ class ALDemoInterstitialManualLoadingViewController: ALDemoBaseViewController, A
         
         if let ad = self.ad
         {
+            /*
+             NOTE: We recommend the use of placements (AFTER creating them in your dashboard):
+             
+             ALInterstitialAd.shared().showOver(UIApplication.sharedApplication().keyWindow!, placement: "MANUAL_LOADING_SCREEN"" andRender: ad)
+             
+             To learn more about placements, check out https://applovin.com/integration#iosPlacementsIntegration
+             */
+            
             ALInterstitialAd.shared().showOver(UIApplication.sharedApplication().keyWindow!, andRender: ad)
         }
     }
