@@ -125,8 +125,8 @@ static NSString *const kSupportLink = @"https://support.applovin.com/support/hom
     
     NSString *appVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
     NSString *sdkVersion = [ALSdk version];
-    NSString *sdkKey = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"AppLovinSdkKey"];
-    NSString *text = [NSString stringWithFormat: @"App Version: %@\nSDK Version: %@\nLanguage: Objective-C\n\nSDK Key: %@", appVersion, sdkVersion, sdkKey];
+    NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+    NSString *text = [NSString stringWithFormat: @"App Version: %@\nSDK Version: %@\niOS Version: %@\n\nLanguage: Objective-C", appVersion, sdkVersion, systemVersion];
     
     NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
     style.alignment =  NSTextAlignmentCenter;

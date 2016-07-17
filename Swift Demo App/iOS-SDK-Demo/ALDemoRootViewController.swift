@@ -97,8 +97,8 @@ class ALDemoRootViewController: UITableViewController, MFMailComposeViewControll
         
         let appVersion = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String
         let sdkVersion = ALSdk.version()
-        let sdkKey = NSBundle.mainBundle().infoDictionary!["AppLovinSdkKey"] as! String
-        let text = "App Version: \(appVersion)\nSDK Version: \(sdkVersion)\nLanguage: Swift\n\nSDK Key: \(sdkKey)"
+        let systemVersion = UIDevice.current().systemVersion
+        let text = "App Version: \(appVersion)\nSDK Version: \(sdkVersion)\niOS Version: \(systemVersion)\n\nLanguage: Swift"
         
         let style = NSMutableParagraphStyle()
         style.alignment = .Center
