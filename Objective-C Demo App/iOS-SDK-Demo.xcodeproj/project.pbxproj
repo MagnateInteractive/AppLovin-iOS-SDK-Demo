@@ -49,7 +49,6 @@
 		1D79132B1BB4A837006C6C60 /* applovin_card_unmuted.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D79131B1BB4A837006C6C60 /* applovin_card_unmuted.png */; };
 		1D79132E1BB4A8FA006C6C60 /* ALDemoBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D79132D1BB4A8FA006C6C60 /* ALDemoBaseTableViewController.m */; };
 		1DC3E98D1BB321660093EF2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */; };
-		1DC3E9971BB3249D0093EF2A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E9961BB3249D0093EF2A /* logo.png */; };
 		1DDB39AC1BF56181002561A0 /* ALDemoArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB39AB1BF56181002561A0 /* ALDemoArticle.m */; };
 		1DFA1BEE1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA1BED1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m */; };
 		2713D00E18EDDD0C006218B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00D18EDDD0C006218B2 /* Foundation.framework */; };
@@ -130,7 +129,6 @@
 		1D79132D1BB4A8FA006C6C60 /* ALDemoBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoBaseTableViewController.m; sourceTree = "<group>"; };
 		1DC3E92F1BB31EA50093EF2A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		1DC3E9961BB3249D0093EF2A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		1DDB39AA1BF56181002561A0 /* ALDemoArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoArticle.h; sourceTree = "<group>"; };
 		1DDB39AB1BF56181002561A0 /* ALDemoArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoArticle.m; sourceTree = "<group>"; };
 		1DFA1BEC1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoNativeAdProgrammaticViewController.h; sourceTree = "<group>"; };
@@ -394,7 +392,6 @@
 				2713D01518EDDD0C006218B2 /* iOS-SDK-Demo-Info.plist */,
 				2713D01B18EDDD0C006218B2 /* iOS-SDK-Demo-Prefix.pch */,
 				1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */,
-				1DC3E9961BB3249D0093EF2A /* logo.png */,
 				2713D01918EDDD0C006218B2 /* main.m */,
 				2713D01F18EDDD0C006218B2 /* Main.storyboard */,
 				1D09FCBB1BB5F21B00001083 /* nav_logo@2x.png */,
@@ -496,7 +493,6 @@
 				1D79131D1BB4A837006C6C60 /* Star_Sprite_0.5.png in Resources */,
 				1D7913241BB4A837006C6C60 /* Star_Sprite_4.png in Resources */,
 				1DC3E98D1BB321660093EF2A /* LaunchScreen.xib in Resources */,
-				1DC3E9971BB3249D0093EF2A /* logo.png in Resources */,
 				1D79131F1BB4A837006C6C60 /* Star_Sprite_1.5.png in Resources */,
 				1D7913261BB4A837006C6C60 /* Star_Sprite_5.png in Resources */,
 				1D79132A1BB4A837006C6C60 /* applovin_card_replay.png in Resources */,

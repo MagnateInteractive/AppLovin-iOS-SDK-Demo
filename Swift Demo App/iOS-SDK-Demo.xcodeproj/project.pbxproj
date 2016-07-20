@@ -56,7 +56,6 @@
 		1D7221581BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221571BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift */; };
 		1D72215A1BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7221591BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift */; };
 		1DCFE4A41BBA14220022ACD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7220931BB6086100FE1B91 /* LaunchScreen.storyboard */; };
-		1DCFE4A61BBA153C0022ACD3 /* applovin_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCFE4A51BBA153C0022ACD3 /* applovin_logo.png */; };
 		1DDB3A071BF5815D002561A0 /* ALCarouselMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB3A061BF5815D002561A0 /* ALCarouselMediaView.m */; };
 		1DDB3A0D1BF58272002561A0 /* ALDemoRSSFeedRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB3A0A1BF58272002561A0 /* ALDemoRSSFeedRetriever.m */; };
 		1DDB3A0E1BF58272002561A0 /* ALDemoArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB3A0C1BF58272002561A0 /* ALDemoArticle.m */; };
@@ -127,7 +126,6 @@
 		1D7221381BB61B0100FE1B91 /* ALDemoRewardedVideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDemoRewardedVideosViewController.swift; sourceTree = "<group>"; };
 		1D7221571BB61F8C00FE1B91 /* ALDemoNativeAdProgrammaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDemoNativeAdProgrammaticViewController.swift; sourceTree = "<group>"; };
 		1D7221591BB6285800FE1B91 /* ALDemoNativeAdFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDemoNativeAdFeedTableViewController.swift; sourceTree = "<group>"; };
-		1DCFE4A51BBA153C0022ACD3 /* applovin_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applovin_logo.png; sourceTree = "<group>"; };
 		1DDB3A051BF5815D002561A0 /* ALCarouselMediaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCarouselMediaView.h; sourceTree = "<group>"; };
 		1DDB3A061BF5815D002561A0 /* ALCarouselMediaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCarouselMediaView.m; sourceTree = "<group>"; };
 		1DDB3A091BF58272002561A0 /* ALDemoRSSFeedRetriever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoRSSFeedRetriever.h; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 				1D7220961BB6086100FE1B91 /* Info.plist */,
 				1D7220931BB6086100FE1B91 /* LaunchScreen.storyboard */,
 				1D7220A41BB6093F00FE1B91 /* nav_logo@2x.png */,
-				1DCFE4A51BBA153C0022ACD3 /* applovin_logo.png */,
 				1D7220D11BB60C3000FE1B91 /* iOS-SDK-Demo-Bridging-Header.h */,
 				1D72212D1BB613E300FE1B91 /* Main.storyboard */,
 			);
@@ -465,7 +462,6 @@
 				1D7220F11BB60C4A00FE1B91 /* Star_Sprite_0.5.png in Resources */,
 				1D7220F81BB60C4A00FE1B91 /* Star_Sprite_4.png in Resources */,
 				1D7220F31BB60C4A00FE1B91 /* Star_Sprite_1.5.png in Resources */,
-				1DCFE4A61BBA153C0022ACD3 /* applovin_logo.png in Resources */,
 				1D72212E1BB613E300FE1B91 /* Main.storyboard in Resources */,
 				1D7220FA1BB60C4A00FE1B91 /* Star_Sprite_5.png in Resources */,
 				1D7220FE1BB60C4A00FE1B91 /* applovin_card_replay.png in Resources */,
