@@ -12,11 +12,14 @@
 #import <SafariServices/SafariServices.h>
 
 @interface ALDemoRootViewController()<MFMailComposeViewControllerDelegate>
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *muteToggle;
 @end
 
 @implementation ALDemoRootViewController
 static NSString *const kSupportEmail = @"support@applovin.com";
 static NSString *const kSupportLink = @"https://support.applovin.com/support/home";
+
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
@@ -26,11 +29,16 @@ static NSString *const kSupportLink = @"https://support.applovin.com/support/hom
     
     UIImageView *logo = [[UIImageView alloc] initWithFrame: CGRectMake(0.0f, 0.0f, 40.0f, 40.0f)];
     logo.contentMode = UIViewContentModeScaleAspectFit;
+    logo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     logo.image = [UIImage imageNamed: @"nav_logo"];
     self.navigationItem.titleView = logo;
     
     [self addFooterLabel];
+    
+    self.muteToggle.image = [self muteIconForCurrentSdkMuteSetting];
 }
+
+#pragma mark - Table View Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -48,6 +56,25 @@ static NSString *const kSupportLink = @"https://support.applovin.com/support/hom
         }
     }
 }
+
+#pragma mark - Sound Toggling
+
+- (IBAction)toggleMute:(UIBarButtonItem *)sender
+{
+    /**
+     * Toggling the sdk mute setting will affect whether your video ads begin in a muted state or not.
+     */
+    ALSdk *sdk = [ALSdk shared];
+    sdk.settings.muted = !sdk.settings.muted;
+    sender.image = [self muteIconForCurrentSdkMuteSetting];
+}
+
+- (UIImage *)muteIconForCurrentSdkMuteSetting
+{
+    return [ALSdk shared].settings.muted ? [UIImage imageNamed: @"mute"] : [UIImage imageNamed: @"unmute"];
+}
+
+#pragma mark - Table View Actions
 
 - (void)openSupportSite
 {

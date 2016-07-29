@@ -15,6 +15,10 @@ class ALDemoRootViewController: UITableViewController, MFMailComposeViewControll
     let kSupportEmail = "support@applovin.com"
     let kSupportLink = "https://support.applovin.com/support/home"
     
+    @IBOutlet var muteToggle: UIBarButtonItem!
+    
+    // MARK: View Lifecycle
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -27,7 +31,11 @@ class ALDemoRootViewController: UITableViewController, MFMailComposeViewControll
         self.navigationItem.titleView = logo
         
         self.addFooterLabel()
+        
+        self.muteToggle.image = muteIconForCurrentSdkMuteSetting()
     }
+    
+    // MARK: Table View Delegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
@@ -45,6 +53,25 @@ class ALDemoRootViewController: UITableViewController, MFMailComposeViewControll
             }
         }
     }
+    
+    // MARK: Sound Toggling
+    
+    @IBAction func toggleMute(sender: UIBarButtonItem!)
+    {
+        /**
+         * Toggling the sdk mute setting will affect whether your video ads begin in a muted state or not.
+         */
+        let sdk = ALSdk.shared()
+        sdk?.settings.muted = !(sdk?.settings.muted)!
+        sender.image = muteIconForCurrentSdkMuteSetting()
+    }
+    
+    func muteIconForCurrentSdkMuteSetting() -> UIImage!
+    {
+        return ALSdk.shared()!.settings.muted ? UIImage(named: "mute") : UIImage(named: "unmute")
+    }
+    
+    // MARK: Table View Actions
     
     func openSupportSite()
     {
@@ -97,7 +124,7 @@ class ALDemoRootViewController: UITableViewController, MFMailComposeViewControll
         
         let appVersion = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String
         let sdkVersion = ALSdk.version()
-        let systemVersion = UIDevice.current().systemVersion
+        let systemVersion = UIDevice.currentDevice().systemVersion
         let text = "App Version: \(appVersion)\nSDK Version: \(sdkVersion)\niOS Version: \(systemVersion)\n\nLanguage: Swift"
         
         let style = NSMutableParagraphStyle()
