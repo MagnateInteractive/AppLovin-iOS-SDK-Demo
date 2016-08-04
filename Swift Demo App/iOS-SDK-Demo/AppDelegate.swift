@@ -23,6 +23,15 @@ class ALDemoAppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         
+        let sdkKey = NSBundle.mainBundle().infoDictionary!["AppLovinSdkKey"] as! String
+        if sdkKey == "YOUR_SDK_KEY"
+        {
+            UIAlertView(title: "ERROR",
+                        message: "Please update the `AppLovinSdkKey` row in your Info.plist file with your SDK key.",
+                        delegate: nil,
+                        cancelButtonTitle: "OK").show()
+        }
+        
         return true
     }
 }
