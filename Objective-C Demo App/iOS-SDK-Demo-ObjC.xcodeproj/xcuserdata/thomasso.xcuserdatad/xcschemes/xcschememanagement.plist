@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>iOS Demo App (ObjC).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>iOS-SDK-Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
