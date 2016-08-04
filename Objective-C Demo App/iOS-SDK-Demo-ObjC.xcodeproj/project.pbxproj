@@ -133,14 +133,14 @@
 		1DDB39AB1BF56181002561A0 /* ALDemoArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoArticle.m; sourceTree = "<group>"; };
 		1DFA1BEC1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoNativeAdProgrammaticViewController.h; sourceTree = "<group>"; };
 		1DFA1BED1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoNativeAdProgrammaticViewController.m; sourceTree = "<group>"; };
-		2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2713D00D18EDDD0C006218B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2713D00F18EDDD0C006218B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2713D01118EDDD0C006218B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2713D01518EDDD0C006218B2 /* iOS-SDK-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-SDK-Demo-Info.plist"; sourceTree = "<group>"; };
+		2713D01518EDDD0C006218B2 /* iOS-SDK-Demo-ObjC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-SDK-Demo-ObjC-Info.plist"; sourceTree = "<group>"; };
 		2713D01718EDDD0C006218B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2713D01918EDDD0C006218B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2713D01B18EDDD0C006218B2 /* iOS-SDK-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-SDK-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		2713D01B18EDDD0C006218B2 /* iOS-SDK-Demo-ObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-SDK-Demo-ObjC-Prefix.pch"; sourceTree = "<group>"; };
 		2713D01C18EDDD0C006218B2 /* ALDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALDemoAppDelegate.h; sourceTree = "<group>"; };
 		2713D01D18EDDD0C006218B2 /* ALDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALDemoAppDelegate.m; sourceTree = "<group>"; };
 		2713D02018EDDD0C006218B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -348,7 +348,7 @@
 		2713D00B18EDDD0C006218B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo.app */,
+				2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo-ObjC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -389,8 +389,8 @@
 			children = (
 				2713D02518EDDD0C006218B2 /* Images.xcassets */,
 				2713D01618EDDD0C006218B2 /* InfoPlist.strings */,
-				2713D01518EDDD0C006218B2 /* iOS-SDK-Demo-Info.plist */,
-				2713D01B18EDDD0C006218B2 /* iOS-SDK-Demo-Prefix.pch */,
+				2713D01518EDDD0C006218B2 /* iOS-SDK-Demo-ObjC-Info.plist */,
+				2713D01B18EDDD0C006218B2 /* iOS-SDK-Demo-ObjC-Prefix.pch */,
 				1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */,
 				2713D01918EDDD0C006218B2 /* main.m */,
 				2713D01F18EDDD0C006218B2 /* Main.storyboard */,
@@ -435,9 +435,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2713D00918EDDD0C006218B2 /* iOS-SDK-Demo */ = {
+		2713D00918EDDD0C006218B2 /* iOS-SDK-Demo-ObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2713D03C18EDDD0C006218B2 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo" */;
+			buildConfigurationList = 2713D03C18EDDD0C006218B2 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo-ObjC" */;
 			buildPhases = (
 				2713D00618EDDD0C006218B2 /* Sources */,
 				2713D00718EDDD0C006218B2 /* Frameworks */,
@@ -447,9 +447,9 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-SDK-Demo";
+			name = "iOS-SDK-Demo-ObjC";
 			productName = "iOS-SDK-Demo";
-			productReference = 2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo.app */;
+			productReference = 2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo-ObjC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -467,7 +467,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2713D00518EDDD0C006218B2 /* Build configuration list for PBXProject "iOS-SDK-Demo" */;
+			buildConfigurationList = 2713D00518EDDD0C006218B2 /* Build configuration list for PBXProject "iOS-SDK-Demo-ObjC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -480,7 +480,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2713D00918EDDD0C006218B2 /* iOS-SDK-Demo */,
+				2713D00918EDDD0C006218B2 /* iOS-SDK-Demo-ObjC */,
 			);
 		};
 /* End PBXProject section */
@@ -646,8 +646,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Prefix.pch";
-				INFOPLIST_FILE = "iOS-SDK-Demo/iOS-SDK-Demo-Info.plist";
+				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-ObjC-Prefix.pch";
+				INFOPLIST_FILE = "iOS-SDK-Demo/iOS-SDK-Demo-ObjC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -658,7 +658,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS-SDK-Demo-ObjC";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -670,8 +670,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Prefix.pch";
-				INFOPLIST_FILE = "iOS-SDK-Demo/iOS-SDK-Demo-Info.plist";
+				GCC_PREFIX_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-ObjC-Prefix.pch";
+				INFOPLIST_FILE = "iOS-SDK-Demo/iOS-SDK-Demo-ObjC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,7 +682,7 @@
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS-SDK-Demo-ObjC";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -691,7 +691,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2713D00518EDDD0C006218B2 /* Build configuration list for PBXProject "iOS-SDK-Demo" */ = {
+		2713D00518EDDD0C006218B2 /* Build configuration list for PBXProject "iOS-SDK-Demo-ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2713D03A18EDDD0C006218B2 /* Debug */,
@@ -700,7 +700,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2713D03C18EDDD0C006218B2 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo" */ = {
+		2713D03C18EDDD0C006218B2 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo-ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2713D03D18EDDD0C006218B2 /* Debug */,

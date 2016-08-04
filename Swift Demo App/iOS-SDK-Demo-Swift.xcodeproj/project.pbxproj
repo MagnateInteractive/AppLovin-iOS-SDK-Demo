@@ -62,7 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D7220871BB6086100FE1B91 /* iOS-SDK-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7220871BB6086100FE1B91 /* iOS-SDK-Demo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D72208A1BB6086100FE1B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D7220941BB6086100FE1B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7220961BB6086100FE1B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		1D7220881BB6086100FE1B91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D7220871BB6086100FE1B91 /* iOS-SDK-Demo.app */,
+				1D7220871BB6086100FE1B91 /* iOS-SDK-Demo-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -403,9 +403,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D7220861BB6086100FE1B91 /* iOS-SDK-Demo */ = {
+		1D7220861BB6086100FE1B91 /* iOS-SDK-Demo-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D7220991BB6086100FE1B91 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo" */;
+			buildConfigurationList = 1D7220991BB6086100FE1B91 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo-Swift" */;
 			buildPhases = (
 				1D7220831BB6086100FE1B91 /* Sources */,
 				1D7220841BB6086100FE1B91 /* Frameworks */,
@@ -415,9 +415,9 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-SDK-Demo";
+			name = "iOS-SDK-Demo-Swift";
 			productName = "iOS-SDK-Demo";
-			productReference = 1D7220871BB6086100FE1B91 /* iOS-SDK-Demo.app */;
+			productReference = 1D7220871BB6086100FE1B91 /* iOS-SDK-Demo-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -435,7 +435,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1D7220821BB6086100FE1B91 /* Build configuration list for PBXProject "iOS-SDK-Demo" */;
+			buildConfigurationList = 1D7220821BB6086100FE1B91 /* Build configuration list for PBXProject "iOS-SDK-Demo-Swift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -448,7 +448,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D7220861BB6086100FE1B91 /* iOS-SDK-Demo */,
+				1D7220861BB6086100FE1B91 /* iOS-SDK-Demo-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -627,7 +627,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applovin.iOS-SDK-Demo-Swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS-SDK-Demo-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -652,7 +652,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applovin.iOS-SDK-Demo-Swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS-SDK-Demo-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -661,7 +661,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D7220821BB6086100FE1B91 /* Build configuration list for PBXProject "iOS-SDK-Demo" */ = {
+		1D7220821BB6086100FE1B91 /* Build configuration list for PBXProject "iOS-SDK-Demo-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D7220971BB6086100FE1B91 /* Debug */,
@@ -670,7 +670,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D7220991BB6086100FE1B91 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo" */ = {
+		1D7220991BB6086100FE1B91 /* Build configuration list for PBXNativeTarget "iOS-SDK-Demo-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D72209A1BB6086100FE1B91 /* Debug */,
