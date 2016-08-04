@@ -461,11 +461,6 @@
 				CLASSPREFIX = ALDemo;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = AppLovin;
-				TargetAttributes = {
-					2713D00918EDDD0C006218B2 = {
-						DevelopmentTeam = X8JXXK4FF5;
-					};
-				};
 			};
 			buildConfigurationList = 2713D00518EDDD0C006218B2 /* Build configuration list for PBXProject "iOS-SDK-Demo-ObjC" */;
 			compatibilityVersion = "Xcode 3.2";

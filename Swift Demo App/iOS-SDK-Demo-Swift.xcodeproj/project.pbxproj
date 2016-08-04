@@ -626,7 +626,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.applovin.iOS-SDK-Demo-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
 				PRODUCT_NAME = "iOS-SDK-Demo-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -651,7 +651,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.applovin.iOS-SDK-Demo-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applovin.sdkdemo;
 				PRODUCT_NAME = "iOS-SDK-Demo-Swift";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-SDK-Demo/iOS-SDK-Demo-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
