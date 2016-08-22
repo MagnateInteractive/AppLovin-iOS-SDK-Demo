@@ -51,6 +51,7 @@
 		1D79132E1BB4A8FA006C6C60 /* ALDemoBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D79132D1BB4A8FA006C6C60 /* ALDemoBaseTableViewController.m */; };
 		1DC3E98D1BB321660093EF2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */; };
 		1DDB39AC1BF56181002561A0 /* ALDemoArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB39AB1BF56181002561A0 /* ALDemoArticle.m */; };
+		1DDF8C351D662CCA00717CBC /* ALNativeBannerAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF8C341D662CCA00717CBC /* ALNativeBannerAd.m */; };
 		1DFA1BEE1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA1BED1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m */; };
 		2713D00E18EDDD0C006218B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00D18EDDD0C006218B2 /* Foundation.framework */; };
 		2713D01018EDDD0C006218B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713D00F18EDDD0C006218B2 /* CoreGraphics.framework */; };
@@ -159,6 +160,8 @@
 		1DC3E98C1BB321660093EF2A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		1DDB39AA1BF56181002561A0 /* ALDemoArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoArticle.h; sourceTree = "<group>"; };
 		1DDB39AB1BF56181002561A0 /* ALDemoArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoArticle.m; sourceTree = "<group>"; };
+		1DDF8C331D662CCA00717CBC /* ALNativeBannerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNativeBannerAd.h; sourceTree = "<group>"; };
+		1DDF8C341D662CCA00717CBC /* ALNativeBannerAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALNativeBannerAd.m; sourceTree = "<group>"; };
 		1DFA1BEC1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDemoNativeAdProgrammaticViewController.h; sourceTree = "<group>"; };
 		1DFA1BED1BB4AF9900CA13C2 /* ALDemoNativeAdProgrammaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDemoNativeAdProgrammaticViewController.m; sourceTree = "<group>"; };
 		2713D00A18EDDD0C006218B2 /* iOS-SDK-Demo-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-SDK-Demo-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,6 +255,7 @@
 		1D568BBF1BB392EA00DB4849 /* Native */ = {
 			isa = PBXGroup;
 			children = (
+				1DDF8C311D662CAA00717CBC /* Native Banner Example */,
 				1DFA1BEB1BB4AF4600CA13C2 /* Programatic Example */,
 				1D7913051BB4821E006C6C60 /* Feed Example */,
 			);
@@ -387,6 +391,23 @@
 				1DDB39AB1BF56181002561A0 /* ALDemoArticle.m */,
 			);
 			name = "RSS Feed Parsing";
+			sourceTree = "<group>";
+		};
+		1DDF8C311D662CAA00717CBC /* Native Banner Example */ = {
+			isa = PBXGroup;
+			children = (
+				1DDF8C321D662CB100717CBC /* Native Banner */,
+			);
+			name = "Native Banner Example";
+			sourceTree = "<group>";
+		};
+		1DDF8C321D662CB100717CBC /* Native Banner */ = {
+			isa = PBXGroup;
+			children = (
+				1DDF8C331D662CCA00717CBC /* ALNativeBannerAd.h */,
+				1DDF8C341D662CCA00717CBC /* ALNativeBannerAd.m */,
+			);
+			name = "Native Banner";
 			sourceTree = "<group>";
 		};
 		1DFA1BEB1BB4AF4600CA13C2 /* Programatic Example */ = {
@@ -585,6 +606,7 @@
 				1D568BB61BB37BB900DB4849 /* ALDemoRewardedVideosViewController.m in Sources */,
 				1D568BB31BB3792800DB4849 /* ALDemoBaseViewController.m in Sources */,
 				1D7912EE1BB4813D006C6C60 /* ALNativeAdVideoPlayer.m in Sources */,
+				1DDF8C351D662CCA00717CBC /* ALNativeBannerAd.m in Sources */,
 				1D7912EF1BB4813D006C6C60 /* ALNativeAdVideoView.m in Sources */,
 				1DDB39AC1BF56181002561A0 /* ALDemoArticle.m in Sources */,
 				2713D01E18EDDD0C006218B2 /* ALDemoAppDelegate.m in Sources */,
