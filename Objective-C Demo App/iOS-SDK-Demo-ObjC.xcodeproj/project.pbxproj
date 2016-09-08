@@ -438,7 +438,7 @@
 		2713D01318EDDD0C006218B2 /* iOS-SDK-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				27F8E00218EE0E550046A235 /* AppLovin SDK 3.4.1 */,
+				27F8E00218EE0E550046A235 /* AppLovin SDK 3.4.3 */,
 				277F7B1E18EDDE37001F2E1F /* Components */,
 				277F7B1C18EDDE27001F2E1F /* SDK Integration Examples */,
 				2713D01418EDDD0C006218B2 /* Supporting Files */,
@@ -487,13 +487,13 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
-		27F8E00218EE0E550046A235 /* AppLovin SDK 3.4.1 */ = {
+		27F8E00218EE0E550046A235 /* AppLovin SDK 3.4.3 */ = {
 			isa = PBXGroup;
 			children = (
 				1D5848A01D53EFF400510BEC /* headers */,
 				1D5848BB1D53EFF400510BEC /* libAppLovinSdk.a */,
 			);
-			name = "AppLovin SDK 3.4.1";
+			name = "AppLovin SDK 3.4.3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
